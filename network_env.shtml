@@ -7,7 +7,7 @@
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>Base Source</title>
+<title>Network envorinment</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="" name="description"/>
@@ -311,18 +311,12 @@
 					  <ul class="nav nav-tabs nav-tabs-lg">
 						<li class="active">
 						  <a href="#tab_1" data-toggle="tab">
-							操作系统分析 </a>
+							对外网络监测 </a>
 						</li>
                         <li>
 						  <a href="#tab_5" data-toggle="tab">
-							网络通信分析 <span class="badge badge-success">
+							对内网络监测 <span class="badge badge-success">
 							  4 </span>
-						  </a>
-						</li>
-						<li>
-						  <a href="#tab_6" data-toggle="tab">
-							操作系统日志分析<span class="badge badge-danger">
-							  1 </span>
 						  </a>
 						</li>
 					  </ul>

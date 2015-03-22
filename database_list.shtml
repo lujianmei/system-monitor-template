@@ -7,7 +7,7 @@
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>Base Source</title>
+<title>Database List</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="" name="description"/>
@@ -227,7 +227,7 @@
 			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
 			<!-- BEGIN PAGE HEADER-->
 			<h3 class="page-title">
-			  基础资源诊断 <small>诊断操作系统网络等情况</small>
+			  数据库分析 <small>诊断数据库压力等情况</small>
 			</h3>
 			<div class="page-bar">
 				<ul class="page-breadcrumb">
@@ -237,11 +237,11 @@
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="#">基础资源</a>
+						<a href="#">智能诊断中心</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
                     <li>
-					  <a href="#">基础资源诊断</a>
+					  <a href="#">数据库分析</a>
 					</li>
 				</ul>
 				<div class="page-toolbar">
@@ -311,18 +311,18 @@
 					  <ul class="nav nav-tabs nav-tabs-lg">
 						<li class="active">
 						  <a href="#tab_1" data-toggle="tab">
-							操作系统分析 </a>
+							数据库压力分析 </a>
 						</li>
                         <li>
 						  <a href="#tab_5" data-toggle="tab">
-							网络通信分析 <span class="badge badge-success">
+							数据库慢日志分析 <span class="badge badge-success">
 							  4 </span>
 						  </a>
 						</li>
 						<li>
-						  <a href="#tab_6" data-toggle="tab">
-							操作系统日志分析<span class="badge badge-danger">
-							  1 </span>
+						  <a href="#tab_2" data-toggle="tab">
+							应用数据表容量监测 <span class="badge badge-success">
+							  4 </span>
 						  </a>
 						</li>
 					  </ul>

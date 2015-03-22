@@ -7,7 +7,7 @@
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>Base Source</title>
+<title>Webserver list</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="" name="description"/>
@@ -227,7 +227,7 @@
 			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
 			<!-- BEGIN PAGE HEADER-->
 			<h3 class="page-title">
-			  基础资源诊断 <small>诊断操作系统网络等情况</small>
+			  Web服务器诊断 <small>诊断Web服务器访问等情况</small>
 			</h3>
 			<div class="page-bar">
 				<ul class="page-breadcrumb">
@@ -237,11 +237,11 @@
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="#">基础资源</a>
+						<a href="#">智能诊断中心</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
                     <li>
-					  <a href="#">基础资源诊断</a>
+					  <a href="#">Web服务器分析</a>
 					</li>
 				</ul>
 				<div class="page-toolbar">
@@ -278,29 +278,15 @@
 						<ul class="dropdown-menu pull-right">
 						  <li>
 							<a href="./host_manage.shtml#tab_1">
-							  基础平台配置 </a>
+							  服务器负载分析 </a>
 						  </li>
                           <li>
 							<a href="./host_manage.shtml#tab_5">
-							  应用管理 </a>
+							  访问日志分析 </a>
 						  </li>
 						  <li>
 							<a href="./host_manage.shtml#tab_4">
-							  日志分析 </a>
-						  </li>
-						  <li>
-							<a href="./host_manage.shtml#tab_2">
-							  服务管理 </a>
-						  </li>
-						  <li class="divider">
-						  </li>
-						  <li>
-							<a href="./host_manage.shtml#tab_3">
-							  预警通知 </a>
-						  </li>
-                          <li>
-							<a href="./host_manage.shtml#tab_1">
-							  定时任务 </a>
+							  反向代理请求分析 </a>
 						  </li>
 						</ul>
 					  </div>
@@ -311,18 +297,18 @@
 					  <ul class="nav nav-tabs nav-tabs-lg">
 						<li class="active">
 						  <a href="#tab_1" data-toggle="tab">
-							操作系统分析 </a>
+							服务器负载分析 </a>
 						</li>
                         <li>
 						  <a href="#tab_5" data-toggle="tab">
-							网络通信分析 <span class="badge badge-success">
+							访问日志分析 <span class="badge badge-success">
 							  4 </span>
 						  </a>
 						</li>
 						<li>
-						  <a href="#tab_6" data-toggle="tab">
-							操作系统日志分析<span class="badge badge-danger">
-							  1 </span>
+						  <a href="#tab_2" data-toggle="tab">
+							反向代理请求分析 <span class="badge badge-success">
+							  4 </span>
 						  </a>
 						</li>
 					  </ul>

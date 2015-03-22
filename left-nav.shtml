@@ -51,6 +51,11 @@
                             服务器组</a>
                         </li>
                         <li class="active">
+                          <a href="service_list.shtml">
+                            <i class="icon-bulb"></i>
+                            应用服务监测</a>
+                        </li>
+                        <li class="active">
                           <a href="hosts_manage_warning.shtml">
                             <i class="icon-graph"></i>
                             服务器报警</a>
@@ -74,6 +79,11 @@
                       <a href="./base_env.shtml">
                         <i class="icon-home"></i>
                         基础资源</a>
+                    </li>
+                    <li>
+                      <a href="./webserver_list.shtml">
+                        <i class="icon-basket"></i>
+                        Web服务器</a>
                     </li>
                     <li>
                       <a href="./application_list.shtml">
