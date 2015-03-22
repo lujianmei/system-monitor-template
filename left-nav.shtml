@@ -76,17 +76,17 @@
                         基础资源</a>
                     </li>
                     <li>
-                      <a href="ecommerce_orders.html">
+                      <a href="./application_list.shtml">
                         <i class="icon-basket"></i>
                         应用及中间件</a>
                     </li>
                     <li>
-                      <a href="ecommerce_orders_view.html">
+                      <a href="./database_list.shtml">
                         <i class="icon-tag"></i>
                         数据库</a>
                     </li>
                     <li>
-                      <a href="ecommerce_products.html">
+                      <a href="./network_env.shtml">
                         <i class="icon-handbag"></i>
                         网络通信</a>
                     </li>
@@ -106,6 +106,10 @@
                     <li>
                       <a href="./system_upgrade.shtml">
                         操作系统升级</a>
+                    </li>
+                    <li>
+                      <a href="./scripts_list.shtml">
+                        脚本管理</a>
                     </li>
 <!--                    <li>
                       <a href="layout_horizontal_menu2.html">

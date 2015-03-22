@@ -227,7 +227,7 @@
 			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
 			<!-- BEGIN PAGE HEADER-->
 			<h3 class="page-title">
-			  Haierframework集群组 <small>按主机管理</small>
+			  基础资源诊断 <small>诊断操作系统网络等情况</small>
 			</h3>
 			<div class="page-bar">
 				<ul class="page-breadcrumb">
@@ -237,11 +237,11 @@
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="#">服务器组</a>
+						<a href="#">基础资源</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
                     <li>
-					  <a href="#">Haierframework集群组</a>
+					  <a href="#">基础资源诊断</a>
 					</li>
 				</ul>
 				<div class="page-toolbar">
@@ -258,10 +258,10 @@
 				<!-- Begin: life time stats -->
 				<div class="portlet">
 				  <div class="portlet-title">
-					<div class="caption">
+					<!--<div class="caption">
 					  <i class="fa fa-shopping-cart"></i>主机 #hf01 <span class="hidden-480">
 						| 192.168.1.100 </span>
-					</div>
+					</div>-->
 					<div class="actions">
 					  <a href="./server_list.shtml" class="btn default yellow-stripe">
 						<i class="fa fa-angle-left"></i>
