@@ -349,6 +349,17 @@
 										</div>
 									  </div>
                                       <div class="form-group">
+										<label class="control-label col-md-3">所属分组</label>
+										<div class="col-md-4">
+                                          <select class="bs-select form-control">
+											<option>Haierframework集群组</option>
+											<option>WCM集群组</option>
+											<option>IDS集群组</option>
+											<option>Nginx负载组</option>
+										  </select>
+										</div>
+									  </div>
+                                      <div class="form-group">
 										<label class="control-label col-md-3">管理用户</label>
 										<div class="col-md-4">
                                           <table>
@@ -1032,32 +1043,7 @@
 						  </div>
 						</div>
 						<div class="tab-pane" id="tab_2">
-                          <div class="row">
-					        <div class="col-md-6">
-						      <div class="btn-group">
-						        <button id="sample_editable_1_new" class="btn green">
-							      添加 <i class="fa fa-plus"></i>
-						        </button>
-						      </div>
-					        </div>
-					        <div class="col-md-6">
-						      <div class="btn-group pull-right">
-						        <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">操作 <i class="fa fa-angle-down"></i>
-						        </button>
-						        <ul class="dropdown-menu pull-right">
-							      
-							      <li>
-							        <a href="#">
-								      配置组策略</a>
-							      </li>
-							      <li>
-							        <a href="#">
-								      导出配置 </a>
-							      </li>
-						        </ul>
-						      </div>
-					        </div>
-					      </div>
+
 						  <div class="table-container">
 							<!--<div class="table-actions-wrapper">
 							  <span>
@@ -1070,6 +1056,34 @@
 							  </select>
 							  <button class="btn btn-sm yellow table-group-action-submit"><i class="fa fa-check"></i> Submit</button>
 							</div>-->
+                            <div class="table-toolbar">
+						      <div class="row">            
+					            <div class="col-md-6">
+						          <div class="btn-group">
+						            <button id="sample_editable_1_new" class="btn green">
+							          添加 <i class="fa fa-plus"></i>
+						            </button>
+						          </div>
+					            </div>
+					            <div class="col-md-6">
+						          <div class="btn-group pull-right">
+						            <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">操作 <i class="fa fa-angle-down"></i>
+						            </button>
+						            <ul class="dropdown-menu pull-right">
+							          
+							          <li>
+							            <a href="#">
+								          配置组策略</a>
+							          </li>
+							          <li>
+							            <a href="#">
+								          导出配置 </a>
+							          </li>
+						            </ul>
+						          </div>
+					            </div>
+					          </div>
+                            </div>
 
 							<table class="table table-striped table-bordered table-hover" id="datatable_invoices">
 							  <thead>
@@ -1203,7 +1217,34 @@
 						  </div>
 						</div>
 						<div class="tab-pane" id="tab_3">
-						  
+                            <div class="table-toolbar">
+						      <div class="row">            
+					            <div class="col-md-6">
+						      <div class="btn-group">
+						        <button id="sample_editable_1_new" class="btn green">
+							      添加 <i class="fa fa-plus"></i>
+						        </button>
+						      </div>
+					        </div>
+					        <div class="col-md-6">
+						      <div class="btn-group pull-right">
+						        <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">操作 <i class="fa fa-angle-down"></i>
+						        </button>
+						        <ul class="dropdown-menu pull-right">
+							      
+							      <li>
+							        <a href="#">
+								      配置组策略</a>
+							      </li>
+							      <li>
+							        <a href="#">
+								      导出配置 </a>
+							      </li>
+						        </ul>
+						      </div>
+					        </div>
+					      </div>
+                              </div>
 						  <table class="table table-striped table-bordered table-hover" id="datatable_invoices">
 							<thead>
 							  <tr role="row" class="heading">
@@ -1394,79 +1435,68 @@
 						</div>
 						<div class="tab-pane" id="tab_4">
 						  <div class="table-container">
+                            <div class="table-toolbar">
+                            <div class="row">
+					          <div class="col-md-6">
+						        <div class="btn-group">
+						          <button id="sample_editable_1_new" class="btn green">
+							        添加 <i class="fa fa-plus"></i>
+						          </button>
+						        </div>
+					          </div>
+					          <div class="col-md-6">
+						        <div class="btn-group pull-right">
+						          <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">操作 <i class="fa fa-angle-down"></i>
+						          </button>
+						          <ul class="dropdown-menu pull-right">
+							        <li>
+							          <a href="#">
+								        导出配置 </a>
+							        </li>
+						          </ul>
+						        </div>
+					          </div>
+					        </div>
+                            </div>
 							<table class="table table-striped table-bordered table-hover" id="datatable_shipment">
 							  <thead>
 								<tr role="row" class="heading">
 								  <th width="10%">
-									时间
+									应用名
 								  </th>
 								  <th width="85%">
-                                    事情日志
+                                    监控日志目录
 								  </th>
                                   
 								</tr>
 								<tr role="row" class="filter">
+								  <td>wcm</td>
 								  <td>
-									03-20-2015 18:08:18
-								  </td>
-								  <td>
-									wcm-accesslog;OK;SOFT;2;IP access is OK.单个IP一分钟内访问次数小于200
+									/data/TRS/TRSWCMV65/wcmlogs/
 								  </td>
 								</tr>
                                 <tr role="row" class="filter">
 								  <td>
-									03-20-2015 18:08:18
+									nginx
 								  </td>
 								  <td>
-									wcm-accesslog;OK;SOFT;2;IP access is OK.单个IP一分钟内访问次数小于200
-								  </td>
-								</tr>
-                                <tr role="row" class="filter">
-								  <td>
-									03-20-2015 18:08:18
-								  </td>
-								  <td>
-									wcm-accesslog;OK;SOFT;2;IP access is OK.单个IP一分钟内访问次数小于200
+									/data/nginx/logs
 								  </td>
 								</tr>
                                 <tr role="row" class="filter">
 								  <td>
-									03-20-2015 18:08:18
+									IDS
 								  </td>
 								  <td>
-									wcm-accesslog;OK;SOFT;2;IP access is OK.单个IP一分钟内访问次数小于200
-								  </td>
-								</tr>
-                                <tr role="row" class="filter">
-								  <td>
-									03-20-2015 18:08:18
-								  </td>
-								  <td>
-									wcm-accesslog;OK;SOFT;2;IP access is OK.单个IP一分钟内访问次数小于200
+									/data/TRS/TRSIDS4.5/bin
 								  </td>
 								</tr>
                                 <tr role="row" class="filter">
 								  <td>
-									03-20-2015 18:08:18
+									Getway4.5
 								  </td>
 								  <td>
-									wcm-accesslog;OK;SOFT;2;IP access is OK.单个IP一分钟内访问次数小于200
-								  </td>
-								</tr>
-                                <tr role="row" class="filter">
-								  <td>
-									03-20-2015 18:08:18
-								  </td>
-								  <td>
-									wcm-accesslog;OK;SOFT;2;IP access is OK.单个IP一分钟内访问次数小于200
-								  </td>
-								</tr>
-                                <tr role="row" class="filter">
-								  <td>
-									03-20-2015 18:08:18
-								  </td>
-								  <td>
-									wcm-accesslog;OK;SOFT;2;IP access is OK.单个IP一分钟内访问次数小于200
+									/data/TRS/TRSGetway4.5/logs/
 								  </td>
 								</tr>
 							  </thead>
@@ -1488,6 +1518,29 @@
 							  </select>
 							  <button class="btn btn-sm yellow table-group-action-submit"><i class="fa fa-check"></i> Submit</button>
 							</div>-->
+                            <div class="table-toolbar">
+                              <div class="row">
+					            <div class="col-md-6">
+						          <div class="btn-group">
+						            <button id="sample_editable_1_new" class="btn green">
+							          从仓库安装应用 <i class="fa fa-plus"></i>
+						            </button>
+						          </div>
+					            </div>
+					            <div class="col-md-6">
+						          <div class="btn-group pull-right">
+						            <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">操作 <i class="fa fa-angle-down"></i>
+						            </button>
+						            <ul class="dropdown-menu pull-right">
+							          <li>
+							            <a href="#">
+								          导出配置 </a>
+							          </li>
+						            </ul>
+						          </div>
+					            </div>
+					          </div>
+                            </div>
 							<table class="table table-striped table-bordered table-hover" id="datatable_invoices">
 							  <thead>
 								<tr role="row" class="heading">
@@ -1519,7 +1572,7 @@
 								  <td>
 									<span>WCM 6.5</span>
 								  </td>
-								  <td><span class="label label-success">正常</span></td>
+								  <td><span class="label label-success">已启动</span></td>
 								  <td>
 									03-20-2015 17:30:31
 								  </td>
@@ -1528,12 +1581,12 @@
 								  </td>
 								  <td>
 									<span >Java1.7 64bit, Tomcat 5.5<br/>安装目录：/data/TRS/TRSWCMV65/<br/>启动用户：Haieradmin<br/>日志大小：16.5GB</span><br/>
-                                    <span class="label label-danger">近7天日志错误数：507次</span><a href="#">查看错误日志</a>
+                                    <!--<span class="label label-danger">近7天日志错误数：507次</span><a href="#">查看错误日志</a>-->
 								  </td>
 								  <td>
 									<div class="margin-bottom-5">
                                       <button type="button" class="btn green">安全重启</button>
-                                      <button type="button" class="btn btn-default"><i class="fa fa-cogs"></i> Shell</button>
+                                      <button type="button" class="btn btn-default"><i class="fa fa-cogs"></i> 软件升级</button>
 									</div>
 								  </td>
 								</tr>
@@ -1543,7 +1596,7 @@
 								  <td>
 									<span>Nginx 1.6.2</span>
 								  </td>
-								  <td><span class="label label-success">正常</span></td>
+								  <td><span class="label label-success">已启动</span></td>
 								  <td>
 									03-20-2015 17:30:31
 								  </td>
@@ -1552,13 +1605,13 @@
 								  </td>
 								  <td>
 									<span>Nginx 1.6.2<br/>安装目录：/data/nginx/<br/>启动用户：root<br/>日志大小：16.5GB</span><br/>
-                                    <span class="label label-danger">近1天404请求数：10080次</span><a href="#">导出</a>
-                                    <span class="label label-danger">近1天504请求数：4680次</span><a href="#">导出</a>
+                                    <!--<span class="label label-danger">近1天404请求数：10080次</span><a href="#">导出</a>
+                                    <span class="label label-danger">近1天504请求数：4680次</span><a href="#">导出</a>-->
 								  </td>
 								  <td>
 									<div class="margin-bottom-5">
                                       <button type="button" class="btn green">安全重启</button>
-                                      <button type="button" class="btn btn-default"><i class="fa fa-cogs"></i> Shell</button>
+                                      <button type="button" class="btn btn-default"><i class="fa fa-cogs"></i> 软件升级</button>
 									</div>
 								  </td>
 								</tr>
@@ -1568,7 +1621,7 @@
 								  <td>
 									<span>Mysql</span>
 								  </td>
-								  <td><span class="label label-danger">超负荷</span></td>
+								  <td><span class="label label-danger">未启动</span></td>
 								  <td>
 									03-20-2015 17:30:31
 								  </td>
@@ -1577,12 +1630,12 @@
 								  </td>
 								  <td>
 									<span>Mysql 5.5<br/>安装目录：/data/mysql5.5/<br/>启动用户：root<br/>日志大小：3.5GB</span><br/>
-                                    <span class="label label-danger">近一天超时查询语句：507次</span><a href="#">导出</a>
+                                    <!--<span class="label label-danger">近一天超时查询语句：507次</span><a href="#">导出</a>-->
 								  </td>
 								  <td>
 									<div class="margin-bottom-5">
                                       <button type="button" class="btn green">安全重启</button>
-                                      <button type="button" class="btn btn-default"><i class="fa fa-cogs"></i> Shell</button>
+                                      <button type="button" class="btn btn-default"><i class="fa fa-cogs"></i> 软件升级</button>
 									</div>
 								  </td>
 								</tr>
@@ -1592,7 +1645,7 @@
 								  <td>
 									<span>IDS v4.5</span>
 								  </td>
-								  <td><span class="label label-success">正常</span></td>
+								  <td><span class="label label-success">已启动</span></td>
 								  <td>
 									03-20-2015 17:30:31
 								  </td>
@@ -1601,12 +1654,12 @@
 								  </td>
 								  <td>
 									<span>Java1.7 64bit, Tomcat 5.5<br/>安装目录：/data/TRS/TRSWCMV65/<br/>启动用户：Haieradmin<br/>日志大小：16.5GB</span><br/>
-                                    <span class="label label-danger">近7天日志错误数：507次</span><a href="#">查看错误日志</a>
+                                    <!--<span class="label label-danger">近7天日志错误数：507次</span><a href="#">查看错误日志</a>-->
 								  </td>
 								  <td>
 									<div class="margin-bottom-5">
                                       <button type="button" class="btn green">安全重启</button>
-                                      <button type="button" class="btn btn-default"><i class="fa fa-cogs"></i> Shell</button>
+                                      <button type="button" class="btn btn-default"><i class="fa fa-cogs"></i> 软件升级</button>
 									</div>
 								  </td>
 								</tr>
@@ -1629,6 +1682,34 @@
 							  </select>
 							  <button class="btn btn-sm yellow table-group-action-submit"><i class="fa fa-check"></i> Submit</button>
 							</div>-->
+                            <div class="table-toolbar">
+                              <div class="row">
+					            <div class="col-md-6">
+						          <div class="btn-group">
+						            <button id="sample_editable_1_new" class="btn green">
+							          添加 <i class="fa fa-plus"></i>
+						            </button>
+						          </div>
+					            </div>
+					            <div class="col-md-6">
+						          <div class="btn-group pull-right">
+						            <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">操作 <i class="fa fa-angle-down"></i>
+						            </button>
+						            <ul class="dropdown-menu pull-right">
+							          
+							          <li>
+							            <a href="#">
+								          配置组策略</a>
+							          </li>
+							          <li>
+							            <a href="#">
+								          导出配置 </a>
+							          </li>
+						            </ul>
+						          </div>
+					            </div>
+					          </div>
+                            </div>
 							<table class="table table-striped table-bordered table-hover" id="datatable_invoices">
 							  <thead>
 								<tr role="row" class="heading">
@@ -1661,7 +1742,7 @@
 								  <td>
 									<div class="margin-bottom-5">
                                       <button type="button" class="btn green">导出日志</button>
-                                      <button type="button" class="btn btn-default"><i class="fa fa-cogs"></i> Shell</button>
+                                      <button type="button" class="btn btn-default"><i class="fa fa-cogs"></i> 软件升级</button>
 									</div>
 								  </td>
 								</tr>

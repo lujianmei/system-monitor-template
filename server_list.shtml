@@ -332,7 +332,7 @@
                           
                           <a class="edit" href="./host_service.shtml#tab_2">
 						    服务清单 </a>
-                          <a class="edit" href="./host_service.shtml#tab_5">
+                          <a class="edit" href="./host_manage.shtml">
 							配置 </a>
 			            </td>
 		              </tr>
@@ -357,7 +357,7 @@
                           
                           <a class="edit" href="javascript:;">
 						    服务清单 </a>
-                          <a class="edit" href="javascript:;">
+                          <a class="edit" href="./host_manage.shtml">
 							配置 </a>
 			            </td>
 		              </tr>
@@ -381,7 +381,7 @@
                           
                           <a class="edit" href="javascript:;">
 						    服务清单 </a>
-                          <a class="edit" href="javascript:;">
+                          <a class="edit" href="./host_manage.shtml">
 							配置 </a>
 			            </td>
 		              </tr>
@@ -405,7 +405,7 @@
                           
                           <a class="edit" href="javascript:;">
 						    服务清单 </a>
-                          <a class="edit" href="javascript:;">
+                          <a class="edit" href="./host_manage.shtml">
 							配置 </a>
 			            </td>
 		              </tr>
@@ -428,7 +428,7 @@
                           
                           <a class="edit" href="javascript:;">
 						    服务清单 </a>
-                          <a class="edit" href="javascript:;">
+                          <a class="edit" href="./host_manage.shtml">
 							配置 </a>
 			            </td>
 		              </tr>
@@ -452,7 +452,7 @@
                           
                           <a class="edit" href="javascript:;">
 						    服务清单 </a>
-                          <a class="edit" href="javascript:;">
+                          <a class="edit" href="./host_manage.shtml">
 							配置 </a>
 			            </td>
 		              </tr>
@@ -476,7 +476,7 @@
                           
                           <a class="edit" href="javascript:;">
 						    服务清单 </a>
-                          <a class="edit" href="javascript:;">
+                          <a class="edit" href="./host_manage.shtml">
 							配置 </a>
 			            </td>
 		              </tr>
@@ -500,7 +500,7 @@
                           
                           <a class="edit" href="javascript:;">
 						    服务清单 </a>
-                          <a class="edit" href="javascript:;">
+                          <a class="edit" href="./host_manage.shtml">
 							配置 </a>
 			            </td>
 		              </tr>
@@ -524,7 +524,7 @@
                           
                           <a class="edit" href="javascript:;">
 						    服务清单 </a>
-                          <a class="edit" href="javascript:;">
+                          <a class="edit" href="./host_manage.shtml">
 							配置 </a>
 			            </td>
 		              </tr>
@@ -548,7 +548,7 @@
                           
                           <a class="edit" href="javascript:;">
 						    服务清单 </a>
-                          <a class="edit" href="javascript:;">
+                          <a class="edit" href="./host_manage.shtml">
 							配置 </a>
 			            </td>
 		              </tr>
@@ -571,7 +571,7 @@
                           
                           <a class="edit" href="javascript:;">
 						    服务清单 </a>
-                          <a class="edit" href="javascript:;">
+                          <a class="edit" href="./host_manage.shtml">
 							配置 </a>
 			            </td>
 		              </tr>
@@ -595,7 +595,7 @@
                           
                           <a class="edit" href="javascript:;">
 						    服务清单 </a>
-                          <a class="edit" href="javascript:;">
+                          <a class="edit" href="./host_manage.shtml">
 							配置 </a>
 			            </td>
 		              </tr>
@@ -619,7 +619,7 @@
                           
                           <a class="edit" href="javascript:;">
 						    服务清单 </a>
-                          <a class="edit" href="javascript:;">
+                          <a class="edit" href="./host_manage.shtml">
 							配置 </a>
 			            </td>
 		              </tr>

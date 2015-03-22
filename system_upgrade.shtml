@@ -7,7 +7,7 @@
   <!-- BEGIN HEAD -->
   <head>
     <meta charset="utf-8"/>
-    <title>Hosts Manage</title>
+    <title>System Upgrade</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <meta content="" name="description"/>
@@ -229,7 +229,7 @@
 		  <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
 		  <!-- BEGIN PAGE HEADER-->
 		  <h3 class="page-title">
-			主机管理 <small>按主机管理</small>
+			操作系统升级 <small>操作系统升级</small>
 		  </h3>
 		  <div class="page-bar">
 			<ul class="page-breadcrumb">
@@ -252,10 +252,10 @@
 		  <!-- BEGIN main content -->
           <div class="row">
             <div class="col-md-12">
-              <div class="portlet box yellow">
+              <div class="portlet box blue-madison">
 	            <div class="portlet-title">
 	              <div class="caption">
-		            <i class="fa fa-globe"></i>报警主机清单
+		            <i class="fa fa-globe"></i>主机清单
 	              </div>
 	              <div class="tools">
 		            <a href="javascript:;" class="reload">
@@ -266,23 +266,23 @@
 	            </div>
 	            <div class="portlet-body">
                   <div class="table-toolbar">
-					<!--<div class="row">
+					<div class="row">
 					  <div class="col-md-6">
-						<div class="btn-group">
+						<div class="btn-group"><a href="./host_manage.shtml">
 						  <button id="sample_editable_1_new" class="btn green">
-							添加 <i class="fa fa-plus"></i>
-						  </button>
+							批量升级 <i class="fa fa-plus"></i>
+						  </button></a>
 						</div>
 					  </div>
 					  <div class="col-md-6">
 						<div class="btn-group pull-right">
-						  <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">操作 <i class="fa fa-angle-down"></i>
+						  <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">脚本配置 <i class="fa fa-angle-down"></i>
 						  </button>
 						  <ul class="dropdown-menu pull-right">
 							
 							<li>
 							  <a href="#">
-								配置组策略</a>
+								配置升级脚本</a>
 							</li>
 							<li>
 							  <a href="#">
@@ -291,7 +291,7 @@
 						  </ul>
 						</div>
 					  </div>
-					</div>-->
+					</div>
 				  </div>
 	              <table class="table table-striped table-bordered table-hover" id="sample_3">
 		            <thead>
@@ -303,7 +303,7 @@
 			              IP地址
 			            </th>
 			            <th>
-			              操作系统
+			              当前系统
 			            </th>
 			            <th>服务状态</th>
 			            <th>
@@ -323,17 +323,10 @@
 			              Redhat 6.0, Linux 3.19.2-1-ARCH
 			            </td>
 			            <td>
-			              <span class="label label-warning">
-							报警 </span>
+			              <span class="label label-success">
+							正常 </span>
 			            </td>
-			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml#tab_2">
-						    服务清单 </a>
-                          <a class="edit" href="./host_manage.shtml">
-							配置 </a>
+			            <td><button type="button" class="btn green">升级</button>
 			            </td>
 		              </tr>
 
@@ -352,13 +345,7 @@
 							警告 </span>
 			            </td>
 			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_manage.shtml">
-							配置 </a>
+                          <button type="button" class="btn green">升级</button>
 			            </td>
 		              </tr>
                       <tr>
@@ -372,17 +359,11 @@
 			              Redhat 6.0, Linux 3.19.2-1-ARCH
 			            </td>
 			            <td>
-			              <span class="label label-warning">
-							报警 </span>
+			              <span class="label label-success">
+							正常 </span>
 			            </td>
 			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_manage.shtml">
-							配置 </a>
+                          <button type="button" class="btn green">升级</button>
 			            </td>
 		              </tr>
                       <tr>
@@ -400,13 +381,24 @@
 							屏蔽 </span>
 			            </td>
 			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_manage.shtml">
-							配置 </a>
+                          <button type="button" class="btn green">升级</button>
+			            </td>
+		              </tr>
+		              <tr>
+			            <td>
+			              hf05
+			            </td>
+			            <td>
+			              192.168.1.105
+			            </td>
+			            <td>
+			              Redhat 6.0, Linux 3.19.2-1-ARCH
+			            </td>
+			            <td>
+			              <span class="label label-sm label-danger">报警</span>
+			            </td>
+			            <td>
+                          <button type="button" class="btn green">升级</button>
 			            </td>
 		              </tr>
                       <tr>
@@ -420,17 +412,11 @@
 			              Redhat 6.0, Linux 3.19.2-1-ARCH
 			            </td>
 			            <td>
-			              <span class="label label-warning">
-							报警 </span>
+			              <span class="label label-success">
+							正常 </span>
 			            </td>
 			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_manage.shtml">
-							配置 </a>
+                          <button type="button" class="btn green">升级</button>
 			            </td>
 		              </tr>
                       <tr>
@@ -444,17 +430,11 @@
 			              Redhat 6.0, Linux 3.19.2-1-ARCH
 			            </td>
 			            <td>
-			              <span class="label label-warning">
-							报警 </span>
+			              <span class="label label-success">
+							正常 </span>
 			            </td>
 			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_manage.shtml">
-							配置 </a>
+                          <button type="button" class="btn green">升级</button>
 			            </td>
 		              </tr>
                       <tr>
@@ -468,17 +448,11 @@
 			              Redhat 6.0, Linux 3.19.2-1-ARCH
 			            </td>
 			            <td>
-			              <span class="label label-warning">
-							报警 </span>
+			              <span class="label label-success">
+							正常 </span>
 			            </td>
 			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_manage.shtml">
-							配置 </a>
+                          <button type="button" class="btn green">升级</button>
 			            </td>
 		              </tr>
                       <tr>
@@ -492,17 +466,11 @@
 			              Redhat 6.0, Linux 3.19.2-1-ARCH
 			            </td>
 			            <td>
-			              <span class="label label-warning">
-							报警 </span>
+			              <span class="label label-success">
+							正常 </span>
 			            </td>
 			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_service.shtml">
-							配置 </a>
+                          <button type="button" class="btn green">升级</button>
 			            </td>
 		              </tr>
                       <tr>
@@ -516,20 +484,30 @@
 			              Redhat 6.0, Linux 3.19.2-1-ARCH
 			            </td>
 			            <td>
-			              <span class="label label-warning">
-							报警 </span>
+			              <span class="label label-success">
+							正常 </span>
 			            </td>
 			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_service.shtml">
-							配置 </a>
+                          <button type="button" class="btn green">升级</button>
 			            </td>
 		              </tr>
-
+                      <tr>
+			            <td>
+			              hf10
+			            </td>
+			            <td>
+			              192.168.1.110
+			            </td>
+			            <td>
+			              Redhat 6.0, Linux 3.19.2-1-ARCH
+			            </td>
+			            <td>
+			              <span class="label label-sm label-danger">报警</span>
+			            </td>
+			            <td>
+                          <button type="button" class="btn green">升级</button>
+			            </td>
+		              </tr>
                       <tr>
 			            <td>
 			              hf01
@@ -541,17 +519,11 @@
 			              Redhat 6.0, Linux 3.19.2-1-ARCH
 			            </td>
 			            <td>
-			              <span class="label label-warning">
-							报警 </span>
+			              <span class="label label-success">
+							正常 </span>
 			            </td>
 			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_service.shtml">
-							配置 </a>
+                          <button type="button" class="btn green">升级</button>
 			            </td>
 		              </tr>
                       <tr>
@@ -565,17 +537,11 @@
 			              Redhat 6.0, Linux 3.19.2-1-ARCH
 			            </td>
 			            <td>
-			              <span class="label label-warning">
-							报警 </span>
+			              <span class="label label-success">
+							正常 </span>
 			            </td>
 			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_service.shtml">
-							配置 </a>
+                          <button type="button" class="btn green">升级</button>
 			            </td>
 		              </tr>
                       <tr>
@@ -589,17 +555,11 @@
 			              Redhat 6.0, Linux 3.19.2-1-ARCH
 			            </td>
 			            <td>
-			              <span class="label label-warning">
-							报警 </span>
+			              <span class="label label-success">
+							正常 </span>
 			            </td>
 			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_service.shtml">
-							配置 </a>
+                          <button type="button" class="btn green">升级</button>
 			            </td>
 		              </tr>
 <tr>
@@ -613,17 +573,11 @@
 			              Redhat 6.0, Linux 3.19.2-1-ARCH
 			            </td>
 			            <td>
-			              <span class="label label-warning">
-							报警 </span>
+			              <span class="label label-success">
+							正常 </span>
 			            </td>
 			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_service.shtml">
-							配置 </a>
+                          <button type="button" class="btn green">升级</button>
 			            </td>
 		              </tr>
 
@@ -642,13 +596,7 @@
 							警告 </span>
 			            </td>
 			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_service.shtml">
-							配置 </a>
+                          <button type="button" class="btn green">升级</button>
 			            </td>
 		              </tr>
                       <tr>
@@ -662,17 +610,11 @@
 			              Redhat 6.0, Linux 3.19.2-1-ARCH
 			            </td>
 			            <td>
-			              <span class="label label-warning">
-							报警 </span>
+			              <span class="label label-success">
+							正常 </span>
 			            </td>
 			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_service.shtml">
-							配置 </a>
+                          <button type="button" class="btn green">升级</button>
 			            </td>
 		              </tr>
                       <tr>
@@ -686,90 +628,11 @@
 			              Redhat 6.0, Linux 3.19.2-1-ARCH
 			            </td>
 			            <td>
-			              <span class="label label-warning">
-							报警 </span>
+			              <span class="label label-success">
+							正常 </span>
 			            </td>
 			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_service.shtml">
-							配置 </a>
-			            </td>
-		              </tr>
-                      <tr>
-			            <td>
-			              wcm01
-			            </td>
-			            <td>
-			              192.168.1.100
-			            </td>
-			            <td>
-			              Redhat 6.0, Linux 3.19.2-1-ARCH
-			            </td>
-			            <td>
-			              <span class="label label-warning">
-							报警 </span>
-			            </td>
-			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_service.shtml">
-							配置 </a>
-			            </td>
-		              </tr>
-
-                      <tr>
-			            <td>
-			              wcm02
-			            </td>
-			            <td>
-			              192.168.1.102
-			            </td>
-			            <td>
-			              Redhat 6.0, Linux 3.19.2-1-ARCH
-			            </td>
-			            <td>
-			              <span class="label label-sm label-warning">
-							警告 </span>
-			            </td>
-			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_service.shtml">
-							配置 </a>
-			            </td>
-		              </tr>
-                      <tr>
-			            <td>
-			              wcm03
-			            </td>
-			            <td>
-			              192.168.2.103
-			            </td>
-			            <td>
-			              Redhat 6.0, Linux 3.19.2-1-ARCH
-			            </td>
-			            <td>
-			              <span class="label label-warning">
-							报警 </span>
-			            </td>
-			            <td>
-			              <a class="edit" href="./host_service.shtml">
-							查看 </a>
-                          
-                          <a class="edit" href="./host_service.shtml">
-						    服务清单 </a>
-                          <a class="edit" href="./host_service.shtml">
-							配置 </a>
+                          <button type="button" class="btn green">升级</button>
 			            </td>
 		              </tr>
 		            </tbody>
