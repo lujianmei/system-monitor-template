@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8"/>
+<title>主机配置</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+<link href="./assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="./assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+<link href="./assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="./assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<link href="./assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+<!-- BEGIN PAGE LEVEL STYLES -->
+<link rel="stylesheet" type="text/css" href="./assets/global/plugins/select2/select2.css"/>
+<link rel="stylesheet" type="text/css" href="./assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap-rtl.css"/>
+<link rel="stylesheet" type="text/css" href="./assets/global/plugins/bootstrap-datepicker/css/datepicker.css"/>
+<link rel="stylesheet" type="text/css" href="./assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css"/>
+<link rel="stylesheet" type="text/css" href="./assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css"/>
+<link rel="stylesheet" type="text/css" href="./assets/global/plugins/jquery-tags-input/jquery.tagsinput-rtl.css"/>
+<link rel="stylesheet" type="text/css" href="./assets/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css">
+<link rel="stylesheet" type="text/css" href="./assets/global/plugins/typeahead/typeahead.css">
+<!-- END PAGE LEVEL PLUGIN STYLES -->
+<!-- BEGIN THEME STYLES -->
+<!-- DOC: To use 'rounded corners' style just load 'components-rounded.css' stylesheet instead of 'components.css' in the below style tag -->
+<link href="./assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+<link href="./assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="./assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+<link href="./assets/admin/layout/css/themes/blue.css" rel="stylesheet" type="text/css" id="style_color"/>
+<link href="./assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+<!-- END THEME STYLES -->
+<link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<!-- DOC: Apply "page-header-fixed-mobile" and "page-footer-fixed-mobile" class to body element to force fixed header or footer in mobile devices -->
+<!-- DOC: Apply "page-sidebar-closed" class to the body and "page-sidebar-menu-closed" class to the sidebar menu element to hide the sidebar by default -->
+<!-- DOC: Apply "page-sidebar-hide" class to the body to make the sidebar completely hidden on toggle -->
+<!-- DOC: Apply "page-sidebar-closed-hide-logo" class to the body element to make the logo hidden on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-hide" class to body element to completely hide the sidebar on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-fixed" class to have fixed sidebar -->
+<!-- DOC: Apply "page-footer-fixed" class to the body element to have fixed footer -->
+<!-- DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side -->
+<!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
+<body class="page-header-fixed page-quick-sidebar-over-content page-style-square">
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top">
+	<!-- BEGIN HEADER INNER -->
+	<div class="page-header-inner">
+		<!-- BEGIN LOGO -->
+		<div class="page-logo">
+			<a href="index.html">
+			<img src="./assets/admin/layout/img/logo.png" alt="logo" class="logo-default"/>
+			</a>
+			<div class="menu-toggler sidebar-toggler hide">
+				<!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+			</div>
+		</div>
+		<!-- END LOGO -->
+		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+		<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+		</a>
+		<!-- END RESPONSIVE MENU TOGGLER -->
+		<!-- BEGIN TOP NAVIGATION MENU -->
+		<div class="top-menu">
+			<ul class="nav navbar-nav pull-right">
+				<!-- BEGIN NOTIFICATION DROPDOWN -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				<li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<i class="icon-bell"></i>
+					<span class="badge badge-default">
+					7 </span>
+					</a>
+					<ul class="dropdown-menu">
+						<li class="external">
+							<h3><span class="bold">你有12个重要通知</span></h3>
+						</li>
+						<li>
+							<ul class="dropdown-menu-list scroller" style="height: 250px;" data-handle-color="#637283">
+
+								<li>
+									<a href="javascript:;">
+									<span class="time">3 mins</span>
+									<span class="details">
+									<span class="label label-sm label-icon label-danger">
+									<i class="fa fa-bolt"></i>
+									</span>
+									服务器 #12 超负载运行. </span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+									<span class="time">10 mins</span>
+									<span class="details">
+									<span class="label label-sm label-icon label-warning">
+									<i class="fa fa-bell-o"></i>
+									</span>
+									服务器 #2 未响应！ </span>
+									</a>
+								</li>
+								<li>
+								  <a href="javascript:;">
+									<span class="time">14 hrs</span>
+									<span class="details">
+									  <span class="label label-sm label-icon label-info">
+									    <i class="fa fa-bullhorn"></i>
+									  </span>
+									  应用返回错误. </span>
+								  </a>
+								</li>
+								<li>
+								  <a href="javascript:;">
+									<span class="time">2 days</span>
+									<span class="details">
+									  <span class="label label-sm label-icon label-danger">
+									    <i class="fa fa-bolt"></i>
+									  </span>
+									  数据库负荷超68%. </span>
+								  </a>
+								</li>
+								<li>
+								  <a href="javascript:;">
+									<span class="time">3 days</span>
+									<span class="details">
+									  <span class="label label-sm label-icon label-danger">
+									    <i class="fa fa-bolt"></i>
+									  </span>
+									  大流量请求. </span>
+								  </a>
+								</li>
+								
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- END NOTIFICATION DROPDOWN -->
+				<!-- BEGIN INBOX DROPDOWN -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+			    
+				<!-- END INBOX DROPDOWN -->
+				<!-- BEGIN TODO DROPDOWN -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+			    
+				<!-- END TODO DROPDOWN -->
+				<!-- BEGIN USER LOGIN DROPDOWN -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				<li class="dropdown dropdown-user">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<img alt="" class="img-circle" src="./assets/admin/layout/img/avatar3_small.jpg"/>
+					<span class="username username-hide-on-mobile">
+					  Nick </span>
+					<i class="fa fa-angle-down"></i>
+				  </a>
+				  <ul class="dropdown-menu dropdown-menu-default">
+					<li>
+					  <a href="extra_profile.html">
+						<i class="icon-user"></i> 个人信息 </a>
+					</li>
+					<li class="divider">
+						</li>
+						<li>
+							<a href="extra_lock.html">
+							<i class="icon-lock"></i> 锁定屏幕 </a>
+						</li>
+						<li>
+							<a href="login.html">
+							<i class="icon-key"></i> 退出 </a>
+						</li>
+					</ul>
+				</li>
+				<!-- END USER LOGIN DROPDOWN -->
+				<!-- BEGIN QUICK SIDEBAR TOGGLER -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				<li class="dropdown dropdown-quick-sidebar-toggler">
+					<a href="javascript:;" class="dropdown-toggle">
+					<i class="icon-logout"></i>
+					</a>
+				</li>
+				<!-- END QUICK SIDEBAR TOGGLER -->
+			</ul>
+		</div>
+		<!-- END TOP NAVIGATION MENU -->
+	</div>
+	<!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+	<!-- BEGIN SIDEBAR -->
+	<div class="page-sidebar-wrapper">
+	  <!--#include file="./left-nav.shtml"-->
+	</div>
+	<!-- END SIDEBAR -->
+	<!-- BEGIN CONTENT -->
+	<div class="page-content-wrapper">
+		<div class="page-content">
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+							<h4 class="modal-title">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							 Widget settings form goes here
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn blue">Save changes</button>
+							<button type="button" class="btn default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<!-- BEGIN PAGE HEADER-->
+			<h3 class="page-title">
+			  主机管理 
+			</h3>
+			<div class="page-bar">
+				<ul class="page-breadcrumb">
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="index.html">首页</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="#">主机管理</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+				</ul>
+				<div class="page-toolbar">
+					<div id="dashboard-report-range" class="pull-right tooltips btn btn-fit-height grey-salt" data-placement="top" data-original-title="Change dashboard date range">
+						<i class="icon-calendar"></i>&nbsp; <span class="thin uppercase visible-lg-inline-block"></span>&nbsp; <i class="fa fa-angle-down"></i>
+					</div>
+				</div>
+			</div>
+			<!-- END PAGE HEADER-->
+			<!-- BEGIN main content -->
+
+            <div class="row">
+			  <div class="col-md-12">
+				<!-- Begin: life time stats -->
+				<div class="portlet">
+				  <div class="portlet-title">
+					<div class="caption">
+					  <i class="fa fa-shopping-cart"></i>主机 #hf01 <span class="hidden-480">
+						| 192.168.1.100 </span>
+					</div>
+					<div class="actions">
+					  <a href="./server_list.shtml" class="btn default yellow-stripe">
+						<i class="fa fa-angle-left"></i>
+						<span class="hidden-480">
+						  返回 </span>
+					  </a>
+					</div>
+				  </div>
+				  <div class="portlet-body">
+					<div class="tabbable">
+					  <ul class="nav nav-tabs nav-tabs-lg">
+						<li class="active">
+						  <a href="#tab_1" data-toggle="tab">
+							基础平台配置 </a>
+						</li>
+                        <li>
+						  <a href="#tab_5" data-toggle="tab">
+							应用安装配置 
+						  </a>
+						</li>
+						<li>
+						  <a href="#tab_2" data-toggle="tab">
+							监控服务管理配置 
+						  </a>
+						</li>
+						<li>
+						  <a href="#tab_3" data-toggle="tab">
+                            预警通知配置
+                          </a>
+						</li>
+						<li>
+						  <a href="#tab_4" data-toggle="tab">
+							日志分析配置 
+						  </a>
+						</li>
+						<li>
+						  <a href="#tab_6" data-toggle="tab">
+							监控进程配置
+						  </a>
+						</li>
+					  </ul>
+					  <div class="tab-content">
+						<div class="tab-pane active" id="tab_1">
+						  <div class="row">
+                            <div class="col-md-12">
+					          <div class="portlet box green-turquoise">
+						        <div class="portlet-title">
+							      <div class="caption">
+								    <i class="fa fa-gift"></i>基础信息
+							      </div>
+							      <div class="tools">
+								    <a href="javascript:;" class="collapse">
+								    </a>
+								    <a href="javascript:;" class="reload">
+								    </a>
+							      </div>
+						        </div>
+						        <div class="portlet-body form">
+							      <!-- BEGIN FORM-->
+							      <form action="#" class="form-horizontal form-row-seperated">
+								    <div class="form-body">
+                                      <div class="form-group">
+										<label class="control-label col-md-3">主机名</label>
+										<div class="col-md-4">
+										  <input class="form-control" id="input_ipv4" type="text"/>
+										  <span class="help-block">
+											hf01-production </span>
+										</div>
+									  </div>
+                                      <div class="form-group">
+										<label class="control-label col-md-3">IPV4</label>
+										<div class="col-md-4">
+										  <input class="form-control" id="input_ipv4" type="text"/>
+										  <span class="help-block">
+											192.168.120.150 </span>
+										</div>
+									  </div>
+                                      <div class="form-group">
+										<label class="control-label col-md-3">IPV6</label>
+										<div class="col-md-4">
+										  <input class="form-control" id="input_ipv6" type="text"/>
+										  <span class="help-block">
+											3ffe:1900:4545:3:200:f8ff:fe21:67cf </span>
+										</div>
+									  </div>
+                                      <div class="form-group">
+										<label class="control-label col-md-3">管理用户</label>
+										<div class="col-md-4">
+                                          <table>
+                                            <tr>
+                                              <td width="10%"><span >
+											      root </span
+                                              </td>
+                                              <td width="60%">(密码到期时间: 2015-08-26)
+                                              </td>
+                                              <td width="20%"><a href="#">修改密码</a>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td width="10%"><span >
+											      haieradmin </span
+                                                          </td>
+                                              <td width="60%">(密码到期时间: 2015-08-26)
+                                              </td>
+                                              <td width="20%"><a href="#">修改密码</a>
+                                              </td>
+                                            </tr>
+                                          </table>
+										</div>
+									  </div>
+                                      <div class="form-group">
+										<label class="control-label col-md-3">系统启动项</label>
+										<div class="col-md-9">
+										  <div class="col-md-12">
+					                        <!-- BEGIN BORDERED TABLE PORTLET-->
+					                        <div class="portlet box yellow">
+						                      <div class="portlet-title">
+							                    <div class="caption">
+								                  <i class="fa fa-coffee"></i>启动项清单
+							                    </div>
+							                    <div class="tools">
+								                  <a href="javascript:;" class="collapse" data-original-title="" title="">
+								                  </a>
+								                  <a href="#portlet-config" data-toggle="modal" class="config" data-original-title="" title="">
+								                  </a>
+								                  <a href="javascript:;" class="reload" data-original-title="" title="">
+								                  </a>
+								                  <a href="javascript:;" class="remove" data-original-title="" title="">
+								                  </a>
+							                    </div>
+						                      </div>
+						                      <div class="portlet-body">
+							                    <div class="table-scrollable">
+								                  <table class="table table-bordered table-hover">
+								                    <thead>
+								                      <tr>
+									                    <th>
+										                  #
+									                    </th>
+									                    <th>
+										                  名称
+									                    </th>
+									                    <th>启动命令</th>
+									                    <th>
+										                  操作
+									                    </th>
+								                      </tr>
+								                    </thead>
+								                    <tbody>
+								                      <tr>
+									                    <td>
+										                  1
+									                    </td>
+									                    <td>
+										                  WCM随机启动
+									                    </td>
+									                    <td>
+										                  /data/TRS/TRSWCMV65/Tomcat/bin/startup.sh
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td >
+										                  2
+									                    </td>
+									                    <td>
+										                  Nginx随机启动
+									                    </td>
+									                    <td>
+										                  /data/nginx/bin/nginx 
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td >
+										                  3
+									                    </td>
+									                    <td>
+										                  Mysql随机启动
+									                    </td>
+									                    <td>
+										                  /data/mysql5.5/bin/mysqld start
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td>
+										                  1
+									                    </td>
+									                    <td>
+										                  WCM随机启动
+									                    </td>
+									                    <td>
+										                  /data/TRS/TRSWCMV65/Tomcat/bin/startup.sh
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+								                    </tbody>
+								                  </table>
+							                    </div>
+						                      </div>
+					                        </div>
+					                        <!-- END BORDERED TABLE PORTLET-->
+				                          </div>
+										</div>
+									  </div>
+                                      <div class="form-group">
+										<label class="control-label col-md-3">应用服务</label>
+										<div class="col-md-9">
+										  <div class="col-md-12">
+					                        <!-- BEGIN BORDERED TABLE PORTLET-->
+					                        <div class="portlet box yellow">
+						                      <div class="portlet-title">
+							                    <div class="caption">
+								                  <i class="fa fa-coffee"></i>系统服务清单(仅应用)
+							                    </div>
+							                    <div class="tools">
+								                  <a href="javascript:;" class="collapse" data-original-title="" title="">
+								                  </a>
+								                  <a href="#portlet-config" data-toggle="modal" class="config" data-original-title="" title="">
+								                  </a>
+								                  <a href="javascript:;" class="reload" data-original-title="" title="">
+								                  </a>
+								                  <a href="javascript:;" class="remove" data-original-title="" title="">
+								                  </a>
+							                    </div>
+						                      </div>
+						                      <div class="portlet-body">
+							                    <div class="table-scrollable">
+								                  <table class="table table-bordered table-hover">
+								                    <thead>
+								                      <tr>
+									                    <th>
+										                  #
+									                    </th>
+									                    <th>
+										                  名称
+									                    </th>
+									                    <th>启动命令</th>
+									                    <th>
+										                  操作
+									                    </th>
+								                      </tr>
+								                    </thead>
+								                    <tbody>
+								                      <tr>
+									                    <td>
+										                  1
+									                    </td>
+									                    <td>
+										                  WCM随机启动
+									                    </td>
+									                    <td>
+										                  /data/TRS/TRSWCMV65/Tomcat/bin/startup.sh
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td >
+										                  2
+									                    </td>
+									                    <td>
+										                  Nginx随机启动
+									                    </td>
+									                    <td>
+										                  /data/nginx/bin/nginx 
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td >
+										                  3
+									                    </td>
+									                    <td>
+										                  Mysql随机启动
+									                    </td>
+									                    <td>
+										                  /data/mysql5.5/bin/mysqld start
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td>
+										                  1
+									                    </td>
+									                    <td>
+										                  WCM随机启动
+									                    </td>
+									                    <td>
+										                  /data/TRS/TRSWCMV65/Tomcat/bin/startup.sh
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+								                    </tbody>
+								                  </table>
+							                    </div>
+						                      </div>
+					                        </div>
+					                        <!-- END BORDERED TABLE PORTLET-->
+				                          </div>
+										</div>
+									  </div>
+                                      <div class="form-group">
+										<label class="control-label col-md-3">定时任务</label>
+										<div class="col-md-9">
+										  <div class="col-md-12">
+					                        <!-- BEGIN BORDERED TABLE PORTLET-->
+					                        <div class="portlet box yellow">
+						                      <div class="portlet-title">
+							                    <div class="caption">
+								                  <i class="fa fa-coffee"></i>定时任务清单
+							                    </div>
+							                    <div class="tools">
+								                  <a href="javascript:;" class="collapse" data-original-title="" title="">
+								                  </a>
+								                  <a href="#portlet-config" data-toggle="modal" class="config" data-original-title="" title="">
+								                  </a>
+								                  <a href="javascript:;" class="reload" data-original-title="" title="">
+								                  </a>
+								                  <a href="javascript:;" class="remove" data-original-title="" title="">
+								                  </a>
+							                    </div>
+						                      </div>
+						                      <div class="portlet-body">
+							                    <div class="table-scrollable">
+								                  <table class="table table-bordered table-hover">
+								                    <thead>
+								                      <tr>
+									                    <th>
+										                  #
+									                    </th>
+									                    <th>
+										                  名称
+									                    </th>
+									                    <th>启动命令</th>
+									                    <th>
+										                  操作
+									                    </th>
+								                      </tr>
+								                    </thead>
+								                    <tbody>
+								                      <tr>
+									                    <td>
+										                  1
+									                    </td>
+									                    <td>
+										                  WCM随机启动
+									                    </td>
+									                    <td>
+										                  /data/TRS/TRSWCMV65/Tomcat/bin/startup.sh
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td >
+										                  2
+									                    </td>
+									                    <td>
+										                  Nginx随机启动
+									                    </td>
+									                    <td>
+										                  /data/nginx/bin/nginx 
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td >
+										                  3
+									                    </td>
+									                    <td>
+										                  Mysql随机启动
+									                    </td>
+									                    <td>
+										                  /data/mysql5.5/bin/mysqld start
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td>
+										                  1
+									                    </td>
+									                    <td>
+										                  WCM随机启动
+									                    </td>
+									                    <td>
+										                  /data/TRS/TRSWCMV65/Tomcat/bin/startup.sh
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+								                    </tbody>
+								                  </table>
+							                    </div>
+						                      </div>
+					                        </div>
+					                        <!-- END BORDERED TABLE PORTLET-->
+				                          </div>
+										</div>
+									  </div>
+                                      <div class="form-group">
+										<label class="control-label col-md-3">Iptables</label>
+										<div class="col-md-9">
+										  <div class="col-md-12">
+					                        <!-- BEGIN BORDERED TABLE PORTLET-->
+					                        <div class="portlet box yellow">
+						                      <div class="portlet-title">
+							                    <div class="caption">
+								                  <i class="fa fa-coffee"></i>Iptables端口配置
+							                    </div>
+							                    <div class="tools">
+								                  <a href="javascript:;" class="collapse" data-original-title="" title="">
+								                  </a>
+								                  <a href="#portlet-config" data-toggle="modal" class="config" data-original-title="" title="">
+								                  </a>
+								                  <a href="javascript:;" class="reload" data-original-title="" title="">
+								                  </a>
+								                  <a href="javascript:;" class="remove" data-original-title="" title="">
+								                  </a>
+							                    </div>
+						                      </div>
+						                      <div class="portlet-body">
+							                    <div class="table-scrollable">
+								                  <table class="table table-bordered table-hover">
+								                    <thead>
+								                      <tr>
+									                    <th>
+										                  #
+									                    </th>
+									                    <th>
+										                  名称
+									                    </th>
+									                    <th>启动命令</th>
+									                    <th>
+										                  操作
+									                    </th>
+								                      </tr>
+								                    </thead>
+								                    <tbody>
+								                      <tr>
+									                    <td>
+										                  1
+									                    </td>
+									                    <td>
+										                  WCM随机启动
+									                    </td>
+									                    <td>
+										                  /data/TRS/TRSWCMV65/Tomcat/bin/startup.sh
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td >
+										                  2
+									                    </td>
+									                    <td>
+										                  Nginx随机启动
+									                    </td>
+									                    <td>
+										                  /data/nginx/bin/nginx 
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td >
+										                  3
+									                    </td>
+									                    <td>
+										                  Mysql随机启动
+									                    </td>
+									                    <td>
+										                  /data/mysql5.5/bin/mysqld start
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td>
+										                  1
+									                    </td>
+									                    <td>
+										                  WCM随机启动
+									                    </td>
+									                    <td>
+										                  /data/TRS/TRSWCMV65/Tomcat/bin/startup.sh
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+								                    </tbody>
+								                  </table>
+							                    </div>
+						                      </div>
+					                        </div>
+					                        <!-- END BORDERED TABLE PORTLET-->
+				                          </div>
+										</div>
+									  </div>
+                                      <div class="form-group">
+										<label class="control-label col-md-3">SSH服务器信任</label>
+										<div class="col-md-9">
+										  <div class="col-md-12">
+					                        <!-- BEGIN BORDERED TABLE PORTLET-->
+					                        <div class="portlet box yellow">
+						                      <div class="portlet-title">
+							                    <div class="caption">
+								                  <i class="fa fa-coffee"></i>Iptables端口配置
+							                    </div>
+							                    <div class="tools">
+								                  <a href="javascript:;" class="collapse" data-original-title="" title="">
+								                  </a>
+								                  <a href="#portlet-config" data-toggle="modal" class="config" data-original-title="" title="">
+								                  </a>
+								                  <a href="javascript:;" class="reload" data-original-title="" title="">
+								                  </a>
+								                  <a href="javascript:;" class="remove" data-original-title="" title="">
+								                  </a>
+							                    </div>
+						                      </div>
+						                      <div class="portlet-body">
+							                    <div class="table-scrollable">
+								                  <table class="table table-bordered table-hover">
+								                    <thead>
+								                      <tr>
+									                    <th>
+										                  #
+									                    </th>
+									                    <th>
+										                  名称
+									                    </th>
+									                    <th>启动命令</th>
+									                    <th>
+										                  操作
+									                    </th>
+								                      </tr>
+								                    </thead>
+								                    <tbody>
+								                      <tr>
+									                    <td>
+										                  1
+									                    </td>
+									                    <td>
+										                  WCM随机启动
+									                    </td>
+									                    <td>
+										                  /data/TRS/TRSWCMV65/Tomcat/bin/startup.sh
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td >
+										                  2
+									                    </td>
+									                    <td>
+										                  Nginx随机启动
+									                    </td>
+									                    <td>
+										                  /data/nginx/bin/nginx 
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td >
+										                  3
+									                    </td>
+									                    <td>
+										                  Mysql随机启动
+									                    </td>
+									                    <td>
+										                  /data/mysql5.5/bin/mysqld start
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td>
+										                  1
+									                    </td>
+									                    <td>
+										                  WCM随机启动
+									                    </td>
+									                    <td>
+										                  /data/TRS/TRSWCMV65/Tomcat/bin/startup.sh
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    <a href="##">禁用</a> </span>
+									                    </td>
+								                      </tr>
+								                    </tbody>
+								                  </table>
+							                    </div>
+						                      </div>
+					                        </div>
+					                        <!-- END BORDERED TABLE PORTLET-->
+				                          </div>
+										</div>
+									  </div>
+                                      <div class="form-group">
+										<label class="control-label col-md-3">日志监控目录</label>
+										<div class="col-md-9">
+										  <div class="col-md-12">
+					                        <!-- BEGIN BORDERED TABLE PORTLET-->
+					                        <div class="portlet box yellow">
+						                      <div class="portlet-title">
+							                    <div class="caption">
+								                  <i class="fa fa-coffee"></i>日志目录清单
+							                    </div>
+							                    <div class="tools">
+								                  <a href="javascript:;" class="collapse" data-original-title="" title="">
+								                  </a>
+								                  <a href="#portlet-config" data-toggle="modal" class="config" data-original-title="" title="">
+								                  </a>
+								                  <a href="javascript:;" class="reload" data-original-title="" title="">
+								                  </a>
+								                  <a href="javascript:;" class="remove" data-original-title="" title="">
+								                  </a>
+							                    </div>
+						                      </div>
+						                      <div class="portlet-body">
+							                    <div class="table-scrollable">
+								                  <table class="table table-bordered table-hover">
+								                    <thead>
+								                      <tr>
+									                    <th>
+										                  #
+									                    </th>
+									                    <th>
+										                  名称
+									                    </th>
+									                    <th>目录</th>
+									                    <th>
+										                  备忘
+									                    </th>
+								                      </tr>
+								                    </thead>
+								                    <tbody>
+								                      <tr>
+									                    <td>
+										                  1
+									                    </td>
+									                    <td>
+										                  WCM日志
+									                    </td>
+									                    <td>
+										                  /data/TRS/TRSWCMV65/wcmlogs/
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    wcm应用日志 </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td >
+										                  2
+									                    </td>
+									                    <td>
+										                  Nginx访问日志
+									                    </td>
+									                    <td>
+										                  /data/nginx/logs/
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    webserver访问日志 </span>
+									                    </td>
+								                      </tr>
+                                                      <tr>
+									                    <td >
+										                  3
+									                    </td>
+									                    <td>
+										                  操作系统日志
+									                    </td>
+									                    <td>
+										                  /var/logs/message.log, /var/logs/error.log
+									                    </td>
+									                    <td>
+										                  <span class="label label-sm label-danger">
+										                    操作系统日志 </span>
+									                    </td>
+								                      </tr>
+								                    </tbody>
+								                  </table>
+							                    </div>
+						                      </div>
+					                        </div>
+					                        <!-- END BORDERED TABLE PORTLET-->
+				                          </div>
+										</div>
+									  </div>
+								    </div>
+								    <div class="form-actions">
+									  <div class="row">
+										<div class="col-md-offset-3 col-md-9">
+										  <button type="submit" class="btn purple"><i class="fa fa-check"></i> 保存</button>
+										  <button type="button" class="btn default">取消</button>
+										</div>
+									  </div>
+								    </div>
+							      </form>
+							      <!-- END FORM-->
+						        </div>
+					          </div>
+				            </div>
+						  </div>
+                          <div class="row">
+
+						  </div>
+						  <div class="row">
+
+						  </div>
+                          <div class="row">
+
+						  </div>
+						</div>
+						<div class="tab-pane" id="tab_2">
+                          <div class="row">
+					        <div class="col-md-6">
+						      <div class="btn-group">
+						        <button id="sample_editable_1_new" class="btn green">
+							      添加 <i class="fa fa-plus"></i>
+						        </button>
+						      </div>
+					        </div>
+					        <div class="col-md-6">
+						      <div class="btn-group pull-right">
+						        <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">操作 <i class="fa fa-angle-down"></i>
+						        </button>
+						        <ul class="dropdown-menu pull-right">
+							      
+							      <li>
+							        <a href="#">
+								      配置组策略</a>
+							      </li>
+							      <li>
+							        <a href="#">
+								      导出配置 </a>
+							      </li>
+						        </ul>
+						      </div>
+					        </div>
+					      </div>
+						  <div class="table-container">
+							<!--<div class="table-actions-wrapper">
+							  <span>
+							  </span>
+							  <select class="table-group-action-input form-control input-inline input-small input-sm">
+								<option value="">Select...</option>
+								<option value="pending">Pending</option>
+								<option value="paid">Paid</option>
+								<option value="canceled">Canceled</option>
+							  </select>
+							  <button class="btn btn-sm yellow table-group-action-submit"><i class="fa fa-check"></i> Submit</button>
+							</div>-->
+
+							<table class="table table-striped table-bordered table-hover" id="datatable_invoices">
+							  <thead>
+								<tr role="row" class="heading">
+								  <!--<th width="5%">
+									<input type="checkbox" class="group-checkable">
+								  </th>-->
+								  <th width="5%">
+									服务名&nbsp;#
+								  </th>
+								  <th width="15%">
+									执行命令
+								  </th>
+								  <th width="10%">
+									运行周期
+								  </th>
+								  <th width="10%">
+									最后运行
+								  </th>
+								  <th width="10%">
+									状态
+								  </th>
+								  <th width="10%">
+									操作
+								  </th>
+								</tr>
+								<tr role="row" class="filter">
+								  <!--<td>
+								  </td>-->
+								  <td>
+									<span>Current Load</span>
+								  </td>
+								  <td>
+									/usr/nagios/plugin/current_load.sh
+								  </td>
+								  <td>
+									5分钟一次
+								  </td>
+								  <td>
+									03-20-2015 17:30:31
+								  </td>
+								  <td>
+									<span class="label label-success">正常</span>
+								  </td>
+								  <td>
+									<div class="margin-bottom-5">
+									  <button class="btn btn-sm yellow filter-submit margin-bottom"><i class="fa fa-recycle"></i> 启动</button>
+									  <button class="btn btn-sm red filter-cancel"><i class="fa fa-times"></i> 禁用</button>
+									</div>                                         
+								  </td>
+								</tr>
+                                <tr role="row" class="filter">
+								  <!--<td>
+								      </td>-->
+								  <td>
+									<span>Total Processes</span>
+								  </td>
+								  <td>
+									/usr/nagios/plugin/current_load.sh
+								  </td>
+								  <td>
+									5分钟一次
+								  </td>
+								  <td>
+									03-20-2015 17:30:31
+								  </td>
+								  <td>
+									<span class="label label-success">正常</span>
+								  </td>
+								  <td>
+									<div class="margin-bottom-5">
+									  <button class="btn btn-sm yellow filter-submit margin-bottom"><i class="fa fa-recycle"></i> 启动</button>
+									  <button class="btn btn-sm red filter-cancel"><i class="fa fa-times"></i> 禁用</button>
+									</div>                                         
+								  </td>
+								</tr>
+                                <tr role="row" class="filter">
+								  <!--<td>
+								      </td>-->
+								  <td>
+									<span>PING</span>
+								  </td>
+								  <td>
+									/usr/nagios/plugin/current_load.sh
+								  </td>
+								  <td>
+									5分钟一次
+								  </td>
+								  <td>
+									03-20-2015 17:30:31
+								  </td>
+								  <td>
+									<span class="label label-success">正常</span>
+								  </td>
+								  <td>
+									<div class="margin-bottom-5">
+									  <button class="btn btn-sm yellow filter-submit margin-bottom"><i class="fa fa-recycle"></i> 启动</button>
+									  <button class="btn btn-sm red filter-cancel"><i class="fa fa-times"></i> 禁用</button>
+									</div>                                         
+								  </td>
+								</tr>
+                                <tr role="row" class="filter">
+								  <!--<td>
+								      </td>-->
+								  <td>
+									<span>Swap Usage</span>
+								  </td>
+								  <td>
+									/usr/nagios/plugin/current_load.sh
+								  </td>
+								  <td>
+									5分钟一次
+								  </td>
+								  <td>
+									03-20-2015 17:30:31
+								  </td>
+								  <td>
+									<span class="label label-success">正常</span>
+								  </td>
+								  <td>
+									<div class="margin-bottom-5">
+									  <button class="btn btn-sm yellow filter-submit margin-bottom"><i class="fa fa-recycle"></i> 启动</button>
+									  <button class="btn btn-sm red filter-cancel"><i class="fa fa-times"></i> 禁用</button>
+									</div>                                         
+								  </td>
+								</tr>
+							  </thead>
+							  <tbody>
+							  </tbody>
+							</table>
+						  </div>
+						</div>
+						<div class="tab-pane" id="tab_3">
+						  
+						  <table class="table table-striped table-bordered table-hover" id="datatable_invoices">
+							<thead>
+							  <tr role="row" class="heading">
+								<th width="5%">
+								  服务名
+								</th>
+                                <th width="5%">
+								  类型
+								</th>
+								<th width="10%">
+                                  时间
+                                </th>
+								<th width="10%">
+                                  联系人
+								</th>
+								<th width="10%">
+								  通知命令
+								</th>
+								<th width="20%">
+								  通知内容
+								</th>
+							  </tr>
+                              <tr role="row" class="filter">
+								<td>
+								  BBS论坛访问
+								</td>
+								<td>
+                                  <span class="label label-warning">报警</span>
+								</td>
+                                <td>
+								  03-20-2015 17:42:17
+								</td>
+								<td>
+								  孙立臣
+								</td>
+								<td>
+								  notify-service-by-email
+								</td>
+								<td>
+								  IP access bbs_host_access.log:20/Mar/2015:17:35:-bbs.haier.com:<br/>218.201.111.115:204 is Warning.单个IP一分钟内访问次数大于200，请查看访问日志
+								</td>
+							  </tr>
+                              <tr role="row" class="filter">
+								<td>
+								  Mysql读写
+								</td>
+								<td>
+                                  <span class="label label-warning">报警</span>
+								</td>
+                                <td>
+								  03-20-2015 17:42:17
+								</td>
+								<td>
+								  孙立臣
+								</td>
+								<td>
+								  notify-service-by-email
+								</td>
+								<td>
+								  mysql Aborted_connects status is Warning connections=24
+								</td>
+							  </tr>
+                              <tr role="row" class="filter">
+								<td>
+								  tcp-options
+								</td>
+								<td>
+                                  <span class="label label-danger">严重</span>
+								</td>
+                                <td>
+								  03-20-2015 17:42:17
+								</td>
+								<td>
+								  孙立臣
+								</td>
+								<td>
+								  notify-service-by-email
+								</td>
+								<td>
+								  TCP Recv-Q is Critical connections=657
+								</td>
+							  </tr>
+                              <tr role="row" class="filter">
+								<td>
+								  BBS论坛访问
+								</td>
+								<td>
+                                  <span class="label label-warning">报警</span>
+								</td>
+                                <td>
+								  03-20-2015 17:42:17
+								</td>
+								<td>
+								  孙立臣
+								</td>
+								<td>
+								  notify-service-by-email
+								</td>
+								<td>
+								  IP access bbs_host_access.log:20/Mar/2015:17:35:-bbs.haier.com:<br/>218.201.111.115:204 is Warning.单个IP一分钟内访问次数大于200，请查看访问日志
+								</td>
+							  </tr>
+                              <tr role="row" class="filter">
+								<td>
+								  BBS论坛访问
+								</td>
+								<td>
+                                  <span class="label label-warning">报警</span>
+								</td>
+                                <td>
+								  03-20-2015 17:42:17
+								</td>
+								<td>
+								  孙立臣
+								</td>
+								<td>
+								  notify-service-by-email
+								</td>
+								<td>
+								  IP access bbs_host_access.log:20/Mar/2015:17:35:-bbs.haier.com:<br/>218.201.111.115:204 is Warning.单个IP一分钟内访问次数大于200，请查看访问日志
+                                  </td>
+                              </tr>
+							  <tr role="row" class="filter">
+								<td>
+								  BBS论坛访问
+								</td>
+								<td>
+                                  <span class="label label-danger">严重</span>
+								</td>
+                                <td>
+								  03-20-2015 17:42:17
+								</td>
+								<td>
+								  孙立臣
+								</td>
+								<td>
+								  notify-service-by-email
+								</td>
+								<td>
+								  IP access bbs_host_access.log:20/Mar/2015:17:35:-bbs.haier.com:<br/>218.201.111.115:204 is Warning.单个IP一分钟内访问次数大于200，请查看访问日志
+								</td>
+							  </tr>
+                              <tr role="row" class="filter">
+								<td>
+								  BBS论坛访问
+								</td>
+								<td>
+                                  <span class="label label-warning">报警</span>
+								</td>
+                                <td>
+								  03-20-2015 17:42:17
+								</td>
+								<td>
+								  孙立臣
+								</td>
+								<td>
+								  notify-service-by-email
+								</td>
+								<td>
+								  IP access bbs_host_access.log:20/Mar/2015:17:35:-bbs.haier.com:<br/>218.201.111.115:204 is Warning.单个IP一分钟内访问次数大于200，请查看访问日志
+								</td>
+							  </tr>
+                              <tr role="row" class="filter">
+								<td >
+								  BBS论坛访问
+								</td>
+								<td >
+                                  <span class="label label-warning">报警</span>
+								</td>
+                                <td >
+								  03-20-2015 17:42:17
+								</td>
+								<td >
+								  孙立臣
+								</td>
+								<td >
+								  notify-service-by-email
+								</td>
+								<td >
+								  IP access bbs_host_access.log:20/Mar/2015:17:35:-bbs.haier.com:<br/>218.201.111.115:204 is Warning.单个IP一分钟内访问次数大于200，请查看访问日志
+								</td>
+							  </tr>
+							</thead>
+							<tbody>
+							</tbody>
+						  </table>
+						  
+						</div>
+						<div class="tab-pane" id="tab_4">
+						  <div class="table-container">
+							<table class="table table-striped table-bordered table-hover" id="datatable_shipment">
+							  <thead>
+								<tr role="row" class="heading">
+								  <th width="10%">
+									时间
+								  </th>
+								  <th width="85%">
+                                    事情日志
+								  </th>
+                                  
+								</tr>
+								<tr role="row" class="filter">
+								  <td>
+									03-20-2015 18:08:18
+								  </td>
+								  <td>
+									wcm-accesslog;OK;SOFT;2;IP access is OK.单个IP一分钟内访问次数小于200
+								  </td>
+								</tr>
+                                <tr role="row" class="filter">
+								  <td>
+									03-20-2015 18:08:18
+								  </td>
+								  <td>
+									wcm-accesslog;OK;SOFT;2;IP access is OK.单个IP一分钟内访问次数小于200
+								  </td>
+								</tr>
+                                <tr role="row" class="filter">
+								  <td>
+									03-20-2015 18:08:18
+								  </td>
+								  <td>
+									wcm-accesslog;OK;SOFT;2;IP access is OK.单个IP一分钟内访问次数小于200
+								  </td>
+								</tr>
+                                <tr role="row" class="filter">
+								  <td>
+									03-20-2015 18:08:18
+								  </td>
+								  <td>
+									wcm-accesslog;OK;SOFT;2;IP access is OK.单个IP一分钟内访问次数小于200
+								  </td>
+								</tr>
+                                <tr role="row" class="filter">
+								  <td>
+									03-20-2015 18:08:18
+								  </td>
+								  <td>
+									wcm-accesslog;OK;SOFT;2;IP access is OK.单个IP一分钟内访问次数小于200
+								  </td>
+								</tr>
+                                <tr role="row" class="filter">
+								  <td>
+									03-20-2015 18:08:18
+								  </td>
+								  <td>
+									wcm-accesslog;OK;SOFT;2;IP access is OK.单个IP一分钟内访问次数小于200
+								  </td>
+								</tr>
+                                <tr role="row" class="filter">
+								  <td>
+									03-20-2015 18:08:18
+								  </td>
+								  <td>
+									wcm-accesslog;OK;SOFT;2;IP access is OK.单个IP一分钟内访问次数小于200
+								  </td>
+								</tr>
+                                <tr role="row" class="filter">
+								  <td>
+									03-20-2015 18:08:18
+								  </td>
+								  <td>
+									wcm-accesslog;OK;SOFT;2;IP access is OK.单个IP一分钟内访问次数小于200
+								  </td>
+								</tr>
+							  </thead>
+							  <tbody>
+							  </tbody>
+							</table>
+						  </div>
+						</div>
+                        <div class="tab-pane" id="tab_5">
+						  <div class="table-container">
+							<!--<div class="table-actions-wrapper">
+							  <span>
+							  </span>
+							  <select class="table-group-action-input form-control input-inline input-small input-sm">
+								<option value="">Select...</option>
+								<option value="pending">Pending</option>
+								<option value="paid">Paid</option>
+								<option value="canceled">Canceled</option>
+							  </select>
+							  <button class="btn btn-sm yellow table-group-action-submit"><i class="fa fa-check"></i> Submit</button>
+							</div>-->
+							<table class="table table-striped table-bordered table-hover" id="datatable_invoices">
+							  <thead>
+								<tr role="row" class="heading">
+								  <!--<th width="5%">
+									<input type="checkbox" class="group-checkable">
+								  </th>-->
+								  <th width="5%">
+									应用名&nbsp;#
+								  </th>
+								  <th width="5%">
+									应用状态
+								  </th>
+								  <th width="10%">
+									最后检查
+								  </th>
+								  <th width="10%">
+									运行时间
+								  </th>
+								  <th width="15%">
+									环境变量
+								  </th>
+								  <th width="15%">
+									操作
+								  </th>
+								</tr>
+								<tr role="row" class="filter">
+								  <!--<td>
+								  </td>-->
+								  <td>
+									<span>WCM 6.5</span>
+								  </td>
+								  <td><span class="label label-success">正常</span></td>
+								  <td>
+									03-20-2015 17:30:31
+								  </td>
+								  <td>
+									6小时27：40分
+								  </td>
+								  <td>
+									<span >Java1.7 64bit, Tomcat 5.5<br/>安装目录：/data/TRS/TRSWCMV65/<br/>启动用户：Haieradmin<br/>日志大小：16.5GB</span><br/>
+                                    <span class="label label-danger">近7天日志错误数：507次</span><a href="#">查看错误日志</a>
+								  </td>
+								  <td>
+									<div class="margin-bottom-5">
+                                      <button type="button" class="btn green">安全重启</button>
+                                      <button type="button" class="btn btn-default"><i class="fa fa-cogs"></i> Shell</button>
+									</div>
+								  </td>
+								</tr>
+                                <tr role="row" class="filter">
+								  <!--<td>
+								      </td>-->
+								  <td>
+									<span>Nginx 1.6.2</span>
+								  </td>
+								  <td><span class="label label-success">正常</span></td>
+								  <td>
+									03-20-2015 17:30:31
+								  </td>
+								  <td>
+									6小时27：40分
+								  </td>
+								  <td>
+									<span>Nginx 1.6.2<br/>安装目录：/data/nginx/<br/>启动用户：root<br/>日志大小：16.5GB</span><br/>
+                                    <span class="label label-danger">近1天404请求数：10080次</span><a href="#">导出</a>
+                                    <span class="label label-danger">近1天504请求数：4680次</span><a href="#">导出</a>
+								  </td>
+								  <td>
+									<div class="margin-bottom-5">
+                                      <button type="button" class="btn green">安全重启</button>
+                                      <button type="button" class="btn btn-default"><i class="fa fa-cogs"></i> Shell</button>
+									</div>
+								  </td>
+								</tr>
+                                <tr role="row" class="filter">
+								  <!--<td>
+								      </td>-->
+								  <td>
+									<span>Mysql</span>
+								  </td>
+								  <td><span class="label label-danger">超负荷</span></td>
+								  <td>
+									03-20-2015 17:30:31
+								  </td>
+								  <td>
+									6小时27：40分
+								  </td>
+								  <td>
+									<span>Mysql 5.5<br/>安装目录：/data/mysql5.5/<br/>启动用户：root<br/>日志大小：3.5GB</span><br/>
+                                    <span class="label label-danger">近一天超时查询语句：507次</span><a href="#">导出</a>
+								  </td>
+								  <td>
+									<div class="margin-bottom-5">
+                                      <button type="button" class="btn green">安全重启</button>
+                                      <button type="button" class="btn btn-default"><i class="fa fa-cogs"></i> Shell</button>
+									</div>
+								  </td>
+								</tr>
+                                <tr role="row" class="filter">
+								  <!--<td>
+								      </td>-->
+								  <td>
+									<span>IDS v4.5</span>
+								  </td>
+								  <td><span class="label label-success">正常</span></td>
+								  <td>
+									03-20-2015 17:30:31
+								  </td>
+								  <td>
+									6小时27：40分
+								  </td>
+								  <td>
+									<span>Java1.7 64bit, Tomcat 5.5<br/>安装目录：/data/TRS/TRSWCMV65/<br/>启动用户：Haieradmin<br/>日志大小：16.5GB</span><br/>
+                                    <span class="label label-danger">近7天日志错误数：507次</span><a href="#">查看错误日志</a>
+								  </td>
+								  <td>
+									<div class="margin-bottom-5">
+                                      <button type="button" class="btn green">安全重启</button>
+                                      <button type="button" class="btn btn-default"><i class="fa fa-cogs"></i> Shell</button>
+									</div>
+								  </td>
+								</tr>
+							  </thead>
+							  <tbody>
+							  </tbody>
+							</table>
+						  </div>
+						</div>
+                        <div class="tab-pane" id="tab_6">
+						  <div class="table-container">
+							<!--<div class="table-actions-wrapper">
+							  <span>
+							  </span>
+							  <select class="table-group-action-input form-control input-inline input-small input-sm">
+								<option value="">Select...</option>
+								<option value="pending">Pending</option>
+								<option value="paid">Paid</option>
+								<option value="canceled">Canceled</option>
+							  </select>
+							  <button class="btn btn-sm yellow table-group-action-submit"><i class="fa fa-check"></i> Submit</button>
+							</div>-->
+							<table class="table table-striped table-bordered table-hover" id="datatable_invoices">
+							  <thead>
+								<tr role="row" class="heading">
+								  <!--<th width="5%">
+									<input type="checkbox" class="group-checkable">
+								  </th>-->
+								  <th width="5%">
+									应用名&nbsp;#
+								  </th>
+								  <th width="10%">
+									占用资源
+								  </th>
+								  <th width="70%">
+									5分钟超时进程(占用CPU超过5分钟线程堆栈)
+								  </th>
+								  <th width="15%">
+									操作
+								  </th>
+								</tr>
+								<tr role="row" class="filter">
+								  <!--<td>
+								  </td>-->
+								  <td>
+									<span>WCM 6.5</span>
+								  </td>
+								  <td><span>CPU:</span>30%<br/><span>内存：</span>1200M</td>
+								  <td>
+									<img src="./assets/admin/layout/img/Selection_053.png" class="img-responsive" alt="" />
+								  </td>
+								  <td>
+									<div class="margin-bottom-5">
+                                      <button type="button" class="btn green">导出日志</button>
+                                      <button type="button" class="btn btn-default"><i class="fa fa-cogs"></i> Shell</button>
+									</div>
+								  </td>
+								</tr>
+							  </thead>
+							  <tbody>
+							  </tbody>
+							</table>
+						  </div>
+						</div>
+				
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<!-- End: life time stats -->
+			  </div>
+			</div>
+
+<!--END main content-->
+            
+            
+		</div>
+	</div>
+	<!-- END CONTENT -->
+	<!-- BEGIN QUICK SIDEBAR -->
+	<a href="javascript:;" class="page-quick-sidebar-toggler"><i class="icon-close"></i></a>
+	<div class="page-quick-sidebar-wrapper">
+		<div class="page-quick-sidebar">
+			<div class="nav-justified">
+				<ul class="nav nav-tabs nav-justified">
+					<li class="active">
+						<a href="#quick_sidebar_tab_1" data-toggle="tab">
+						Users <span class="badge badge-danger">2</span>
+						</a>
+					</li>
+					<li>
+						<a href="#quick_sidebar_tab_2" data-toggle="tab">
+						Alerts <span class="badge badge-success">7</span>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						More<i class="fa fa-angle-down"></i>
+						</a>
+						<ul class="dropdown-menu pull-right" role="menu">
+							<li>
+								<a href="#quick_sidebar_tab_3" data-toggle="tab">
+								<i class="icon-bell"></i> 报警 </a>
+							</li>
+							<li>
+								<a href="#quick_sidebar_tab_3" data-toggle="tab">
+								<i class="icon-info"></i> 通知 </a>
+							</li>
+							<li>
+								<a href="#quick_sidebar_tab_3" data-toggle="tab">
+								<i class="icon-speech"></i> 动态 </a>
+							</li>
+							<li class="divider">
+							</li>
+							<li>
+								<a href="#quick_sidebar_tab_3" data-toggle="tab">
+								<i class="icon-settings"></i> 配置 </a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+	<!-- END QUICK SIDEBAR -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div class="page-footer">
+	<div class="page-footer-inner">
+		 2015 &copy; 
+	</div>
+	<div class="scroll-to-top">
+		<i class="icon-arrow-up"></i>
+	</div>
+</div>
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="./assets/global/plugins/respond.min.js"></script>
+<script src="./assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
+<script src="./assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="./assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script type="text/javascript" src="./assets/global/plugins/select2/select2.min.js"></script>
+<script type="text/javascript" src="./assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="./assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+<script type="text/javascript" src="./assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="./assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="./assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="./assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+<script src="./assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
+<script src="./assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
+<script src="./assets/global/scripts/datatable.js"></script>
+<script src="./assets/admin/pages/scripts/ecommerce-orders-view.js"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<script>
+        jQuery(document).ready(function() {    
+           Metronic.init(); // init metronic core components
+Layout.init(); // init current layout
+QuickSidebar.init(); // init quick sidebar
+Demo.init(); // init demo features
+           EcommerceOrdersView.init();
+        });
+    </script>
+<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>
