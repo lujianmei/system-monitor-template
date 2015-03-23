@@ -121,6 +121,10 @@
                       <a href="./scripts_list.shtml">
                         脚本管理</a>
                     </li>
+                    <li>
+                      <a href="./package_manage.shtml">
+                        软件仓库管理</a>
+                    </li>
 <!--                    <li>
                       <a href="layout_horizontal_menu2.html">
                         应用配置</a>

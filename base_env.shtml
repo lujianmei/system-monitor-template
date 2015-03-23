@@ -258,10 +258,9 @@
 				<!-- Begin: life time stats -->
 				<div class="portlet">
 				  <div class="portlet-title">
-					<!--<div class="caption">
-					  <i class="fa fa-shopping-cart"></i>主机 #hf01 <span class="hidden-480">
-						| 192.168.1.100 </span>
-					</div>-->
+					<div class="caption">
+					  <i class="fa fa-shopping-cart"></i>主机数 <span class="hidden-480">linux: 108台 | Windows: 5台 </span>
+					</div>
 					<div class="actions">
 					  <a href="./server_list.shtml" class="btn default yellow-stripe">
 						<i class="fa fa-angle-left"></i>
@@ -1187,7 +1186,187 @@
 							  </select>
 							  <button class="btn btn-sm yellow table-group-action-submit"><i class="fa fa-check"></i> Submit</button>
 							</div>-->
-
+                            <div class="col-md-12">
+					          <!-- BEGIN SAMPLE TABLE PORTLET-->
+					          <div class="portlet box purple">
+						        <div class="portlet-title">
+							      <div class="caption">
+								    <i class="fa fa-comments"></i>信息收集
+							      </div>
+							      <div class="tools">
+								    <a href="javascript:;" class="collapse">
+								    </a>
+								    <a href="#portlet-config" data-toggle="modal" class="config">
+								    </a>
+								    <a href="javascript:;" class="reload">
+								    </a>
+								    <a href="javascript:;" class="remove">
+								    </a>
+							      </div>
+						        </div>
+						        <div class="portlet-body">
+                                  <div class="panel panel-success">
+								    <!-- Default panel contents -->
+								    <div class="panel-heading">
+									  <h3 class="panel-title">网络流量监测分析</h3>
+								    </div>
+								    <div class="panel-body">
+                                      <div class="alert alert-danger">
+								        <strong>Danger!</strong> 监测到服务器<span class="label label-danger">192.168.1.103</span>服务器有异常流量!
+							          </div>
+									  <p>
+									    
+									  </p>
+								    </div>
+								    <!-- Table -->
+								    <table class="table">
+									  <thead>
+									    <tr>
+										  <th>
+										    #
+										  </th>
+										  <th>
+										    主机名
+										  </th>
+										  <th>IP地址</th>
+										  <th>
+										    异常流量
+										  </th>
+                                          <th>
+										    详情
+										  </th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr>
+                                          <td> 1 </td>
+										  <td>
+										    hr01
+										  </td>
+										  <td>192.168.1.103</td>
+										  <td><span class="label label-danger">发现异常流量</span></td>
+                                          <td>
+										    <a href="#">详情</a>
+										  </td>
+									    </tr>
+									  </tbody>
+								    </table>
+								  </div>
+                                  <div class="panel panel-success">
+								    <!-- Default panel contents -->
+								    <div class="panel-heading">
+									  <h3 class="panel-title">带宽使用情况</h3>
+								    </div>
+								    <div class="panel-body">
+                                      <div class="alert alert-warning">
+								        <strong>Warning!</strong> 
+                                        监测到目前有<span class="label label-danger">2</span>台linux服务器带宽使用量过高!
+							          </div>
+								    </div>
+								    <!-- Table -->
+								    <table class="table">
+									  <thead>
+									    <tr>
+										  <th>
+										    #
+										  </th>
+										  <th>
+										    源IP
+										  </th>
+										  <th>目标IP</th>
+										  <th>
+										    问题
+										  </th>
+                                          <th>
+										    详情
+										  </th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr>
+										  <td>
+										    1
+										  </td>
+										  <td>
+										    192.168.1.100
+										  </td>
+										  <td>
+										    62.10.2.100
+										  </td>
+										  <td><span class="alert-danger">带宽超5M/s持续5分钟</span></td>
+                                          <td>
+										    <a href="#">详情</a>
+										  </td>
+									    </tr>
+                                        <tr>
+										  <td> 1 </td>
+                                          <td>
+										    192.168.1.100
+										  </td>
+										  <td>
+										    62.1.2.200
+										  </td>
+										  <td><span class="alert-danger">带宽超5M/s持续5分钟</span></td>
+                                          <td>
+										    <a href="#">详情</a>
+										  </td>
+									    </tr>
+									  </tbody>
+								    </table>
+								  </div>
+                                  <div class="panel panel-success">
+								    <!-- Default panel contents -->
+								    <div class="panel-heading">
+									  <h3 class="panel-title">Traceroute分析</h3>
+								    </div>
+								    <div class="panel-body">
+                                      <div class="alert alert-warning">
+								        <strong>Warning!</strong>
+                                        监测到www.haier.com路由超时<span class="label label-warning">45s!</span>!
+							          </div>
+								    </div>
+								    <!-- Table -->
+								    <table class="table">
+									  <thead>
+									    <tr>
+										  <th>
+										    时间
+										  </th>
+										  <th>
+										    监测主机或域名
+										  </th>
+										  <th>监测命令</th>
+										  <th>
+										    分析结果
+										  </th>
+                                          <th>
+										    详情
+										  </th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr>
+										  <td>
+										    2015.03.21 11:13:23
+										  </td>
+										  <td>
+										    www.haier.com
+										  </td>
+										  <td>
+										    traceroute www.haier.com
+										  </td>
+										  <td>路由节点数:12, 平均时长35ms, <span class="label-warning">最长耗时45s</span></td>
+                                          <td>
+										    <a href="#">详情</a>
+										  </td>
+									    </tr>
+									  </tbody>
+								    </table>
+								  </div>
+						        </div>
+					          </div>
+					          <!-- END SAMPLE TABLE PORTLET-->
+				            </div>
 						  </div>
 						</div>
                         <div class="tab-pane" id="tab_6">
