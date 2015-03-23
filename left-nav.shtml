@@ -95,11 +95,11 @@
                         <i class="icon-tag"></i>
                         数据库</a>
                     </li>
-                    <li>
+                    <!--<li>
                       <a href="./network_env.shtml">
                         <i class="icon-handbag"></i>
                         网络通信</a>
-                    </li>
+                    </li>-->
                   </ul>
                 </li>
                 <li>

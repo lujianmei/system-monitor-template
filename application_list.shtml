@@ -311,17 +311,17 @@
 					  <ul class="nav nav-tabs nav-tabs-lg">
 						<li class="active">
 						  <a href="#tab_1" data-toggle="tab">
-							应用稳定性监测 </a>
+							Java </a>
 						</li>
                         <li>
 						  <a href="#tab_5" data-toggle="tab">
-							应用日志分析 <span class="badge badge-success">
+							应用日志 <span class="badge badge-success">
 							  4 </span>
 						  </a>
 						</li>
-						<li>
+                        <li>
 						  <a href="#tab_2" data-toggle="tab">
-							应用通信分析 <span class="badge badge-success">
+							Memcache <span class="badge badge-success">
 							  4 </span>
 						  </a>
 						</li>
@@ -329,7 +329,189 @@
 					  <div class="tab-content">
 						<div class="tab-pane active" id="tab_1">
                           <div class="table-container">
-
+                            <div class="col-md-12">
+					          <!-- BEGIN SAMPLE TABLE PORTLET-->
+					          <div class="portlet box purple">
+						        <div class="portlet-title">
+							      <div class="caption">
+								    <i class="fa fa-comments"></i>信息收集
+							      </div>
+							      <div class="tools">
+								    <a href="javascript:;" class="collapse">
+								    </a>
+								    <a href="#portlet-config" data-toggle="modal" class="config">
+								    </a>
+								    <a href="javascript:;" class="reload">
+								    </a>
+								    <a href="javascript:;" class="remove">
+								    </a>
+							      </div>
+						        </div>
+						        <div class="portlet-body">
+                                  <div class="panel panel-success">
+								    <!-- Default panel contents -->
+								    <div class="panel-heading">
+									  <h3 class="panel-title">资源使用概览(持续三分钟监测数据分析)</h3>
+								    </div>
+								    <div class="panel-body">
+                                      <div class="alert alert-danger">
+								        <strong>Danger!</strong> 监测到目前有<span class="label label-danger">1</span>台Java CPU使用率较高压力不均衡!
+							          </div>
+								    </div>
+								    <!-- Table -->
+								    <table class="table">
+									  <thead>
+									    <tr>
+										  <th>
+										    #
+										  </th>
+                                          <th>
+                                            监测开始时间
+                                          </th>
+										  <th>
+										    主机名
+										  </th>
+										  <th>IP地址</th>
+										  <th>Java Version</th>
+										  <th>
+										    CPU占用(平均)
+										  </th>
+                                          <th>
+										    内存占用
+										  </th>
+                                          <th>操作</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr>
+										  <td>
+										    1
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>hf01</td>
+										  <td>192.168.1.100</td>
+										  <td>Java 1.7 64 bit</td>
+										  <td>
+										    15%
+										  </td>
+										  <td>
+                                            2400M/8000M
+                                          </td>
+                                          <td>
+										    <a href="#">详情</a>
+										  </td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    2
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>hf02</td>
+										  <td>192.168.1.102</td>
+                                          <td>Java 1.7 64 bit</td>
+										  <td>
+										    15%
+										  </td>
+										  <td>
+                                            3600M/8000M
+                                          </td>
+                                          <td>
+										    <a href="#">详情</a>
+										  </td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    3
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>hf03</td>
+										  <td>192.168.1.103</td>
+                                          <td>Java 1.7 64 bit</td>
+										  <td>
+										    <span class="label-warning">92%</span>
+										  </td>
+										  <td>
+                                            <span class="label-warning">6600M/8000M</span>
+                                          </td>
+                                          <td>
+										    <a href="#">详情</a>
+										  </td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    4
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>hf04</td>
+										  <td>192.168.1.104</td>
+                                          <td>Java 1.7 64 bit</td>
+										  <td>
+										    18%
+										  </td>
+										  <td>
+                                            2450M/8000M
+                                          </td>
+                                          <td>
+										    <a href="#">详情</a>
+										  </td>
+									    </tr>
+									  </tbody>
+								    </table>
+								  </div>
+                                  <div class="panel panel-success">
+								    <!-- Default panel contents -->
+								    <div class="panel-heading">
+									  <h3 class="panel-title">问题线程监测</h3>
+								    </div>
+								    <!--<div class="panel-body">
+                                        <div class="alert alert-warning">
+								          <strong>Warning!</strong> 
+                                          监测到目前有<span class="label label-danger">2</span>台linux服务器磁盘剩余空间低于5%!
+							            </div>
+                                        <div class="alert alert-danger">
+								          <strong>Danger!</strong> 
+                                          监测到目前有<span class="label label-danger">1</span>台服务器CPU使用率超过95%! 监测到僵尸进程!<a href="#">查看</a>
+							            </div>
+								    </div>-->
+								    <!-- Table -->
+								    <table class="table">
+									  <thead>
+									    <tr>
+                                          <th>监测时间</th>
+										  <th>
+										    主机名
+										  </th>
+                                          <th>IP地址</th>
+										  <th>
+										    5分钟超时进程(占用CPU超过5分钟线程堆栈)
+										  </th>
+										  <th>
+										    操作
+										  </th>
+									    </tr>
+									  </thead>
+                                      <tbody>
+									    <tr>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>wcm01</td>
+										  <td>192.168.1.100</td>
+                                          <td>
+										    <img src="./assets/admin/layout/img/Selection_053.png" class="img-responsive" alt="">
+										  </td>
+                                          <td>
+                                            <div class="margin-bottom-5">
+                                              <button type="button" class="btn green">导出日志</button>
+                                              <button type="button" class="btn btn-default"><i class="fa fa-cogs"></i> Shell</button>
+									        </div>
+                                          </td>
+									    </tr>
+									  </tbody>
+								    </table>
+								  </div>
+						        </div>
+					          </div>
+					          <!-- END SAMPLE TABLE PORTLET-->
+				            </div>
 						  </div>
 						</div>
 						<div class="tab-pane" id="tab_2">
@@ -371,7 +553,224 @@
 							  </select>
 							  <button class="btn btn-sm yellow table-group-action-submit"><i class="fa fa-check"></i> Submit</button>
 							</div>-->
-
+                            <div class="col-md-12">
+					          <!-- BEGIN SAMPLE TABLE PORTLET-->
+					          <div class="portlet box purple">
+						        <div class="portlet-title">
+							      <div class="caption">
+								    <i class="fa fa-comments"></i>信息收集
+							      </div>
+							      <div class="tools">
+								    <a href="javascript:;" class="collapse">
+								    </a>
+								    <a href="#portlet-config" data-toggle="modal" class="config">
+								    </a>
+								    <a href="javascript:;" class="reload">
+								    </a>
+								    <a href="javascript:;" class="remove">
+								    </a>
+							      </div>
+						        </div>
+						        <div class="portlet-body">
+                                  <div class="panel panel-success">
+								    <!-- Default panel contents -->
+								    <div class="panel-heading">
+									  <h3 class="panel-title">访问日志分析</h3>
+								    </div>
+								    <div class="panel-body">
+                                      <div class="alert alert-danger">
+								        <strong>Warning!</strong> 监测到近一天Tomcat请求错误情况!
+							          </div>
+								    </div>
+								    <!-- Table -->
+								    <table class="table">
+									  <thead>
+									    <tr>
+										  <th>
+										    #
+										  </th>
+                                          <th>
+                                            主机名
+                                          </th>
+										  <th>
+										    IP地址
+										  </th>
+                                          <th>应用名</th>
+										  <th>404错误数</th>
+										  <th>
+										    504错误数
+										  </th>
+                                          <th>操作</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr>
+										  <td>
+										    1
+										  </td>
+                                          <td>hf01</td>
+                                          <td>192.169.0.11</td>
+                                          <td>wcm</td>
+										  <td>406次</td>
+										  <td>2040次</td>
+                                          <td>
+										    <a href="#">导出</a>
+										  </td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    2
+										  </td>
+                                          <td>hf02</td>
+                                          <td>192.169.0.11</td>
+                                          <td>wcm</td>
+										  <td>406次</td>
+										  <td>2040次</td>
+                                          <td>
+										    <a href="#">导出</a>
+										  </td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    3
+										  </td>
+                                          <td>hf03</td>
+                                          <td>192.169.0.11</td>
+                                          <td>wcm</td>
+										  <td>406次</td>
+										  <td>2040次</td>
+                                          <td>
+										    <a href="#">导出</a>
+										  </td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    4
+										  </td>
+                                          <td>hf04</td>
+                                          <td>192.169.0.11</td>
+                                          <td>wcm</td>
+										  <td>406次</td>
+										  <td>2040次</td>
+                                          <td>
+										    <a href="#">导出</a>
+										  </td>
+									    </tr>
+									  </tbody>
+								    </table>
+								  </div>
+                                  <div class="panel panel-success">
+								    <!-- Default panel contents -->
+								    <div class="panel-heading">
+									  <h3 class="panel-title">应用异常监测(监测日志中Exception)</h3>
+								    </div>
+								    <div class="panel-body">
+                                        <div class="alert alert-warning">
+								          <strong>Warning!</strong> 
+                                          监测到目前有<span class="label label-danger">2</span>台应用监测数据库操作异常!
+							            </div>
+                                        <div class="alert alert-danger">
+								          <strong>Danger!</strong> 
+                                          监测到目前有<span class="label label-danger">1</span>台近三天应用日志错误数超1000<a href="#">查看</a>
+							            </div>
+								    </div>
+								    <!-- Table -->
+								    <table class="table">
+									  <thead>
+									    <tr>
+										  <th>
+										    #
+										  </th>
+                                          <th>监测时间</th>
+										  <th>
+										    主机名
+										  </th>
+                                          <th>
+										    IP地址
+										  </th>
+                                          <th>应用名</th>
+										  <th>监测日志目录</th>
+										  <th>异常数量</th>
+										  <th>数据库异常</th>
+                                          <th>操作</th>
+									    </tr>
+									  </thead>
+                                      <tbody>
+									    <tr>
+										  <td>
+										    1
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>hf01</td>
+										  <td>192.168.1.100</td>
+                                          <td>wcm</td>
+                                          <td>
+										    /data/Haierframework/Tomcat/logs
+										  </td>
+                                          <td>3598</td>
+                                          <td>200</td>
+                                          <td>
+                                            <a href="#">详情</a>
+                                          </td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    1
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>hf01</td>
+										  <td>192.168.1.100</td>
+                                          <td>wcm</td>
+                                          <td>
+										    /data/Haierframework/Tomcat/logs
+										  </td>
+                                          <td>3598</td>
+                                          <td>200</td>
+                                          <td>
+                                            <a href="#">详情</a>
+                                          </td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    1
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>hf01</td>
+										  <td>192.168.1.100</td>
+                                          <td>wcm</td>
+                                          <td>
+										    /data/Haierframework/Tomcat/logs
+										  </td>
+                                          <td>3598</td>
+                                          <td>200</td>
+                                          <td>
+                                            <a href="#">详情</a>
+                                          </td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    1
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>hf01</td>
+										  <td>192.168.1.100</td>
+                                          <td>wcm</td>
+                                          <td>
+										    /data/Haierframework/Tomcat/logs
+										  </td>
+                                          <td>3598</td>
+                                          <td>200</td>
+                                          <td>
+                                            <a href="#">详情</a>
+                                          </td>
+									    </tr>
+									  </tbody>
+								    </table>
+								  </div>
+						        </div>
+					          </div>
+					          <!-- END SAMPLE TABLE PORTLET-->
+				            </div>
 						  </div>
 						</div>
                         <div class="tab-pane" id="tab_6">

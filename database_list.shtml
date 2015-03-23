@@ -311,25 +311,243 @@
 					  <ul class="nav nav-tabs nav-tabs-lg">
 						<li class="active">
 						  <a href="#tab_1" data-toggle="tab">
-							数据库压力分析 </a>
+							数据库基本信息 </a>
 						</li>
                         <li>
 						  <a href="#tab_5" data-toggle="tab">
-							数据库慢日志分析 <span class="badge badge-success">
+							数据库慢查询 <span class="badge badge-success">
 							  4 </span>
 						  </a>
 						</li>
-						<li>
+						<!--<li>
 						  <a href="#tab_2" data-toggle="tab">
 							应用数据表容量监测 <span class="badge badge-success">
 							  4 </span>
 						  </a>
-						</li>
+						</li>-->
 					  </ul>
 					  <div class="tab-content">
 						<div class="tab-pane active" id="tab_1">
 						  <div class="table-container">
-
+                            <div class="col-md-12">
+					          <!-- BEGIN SAMPLE TABLE PORTLET-->
+					          <div class="portlet box purple">
+						        <div class="portlet-title">
+							      <div class="caption">
+								    <i class="fa fa-comments"></i>信息收集
+							      </div>
+							      <div class="tools">
+								    <a href="javascript:;" class="collapse">
+								    </a>
+								    <a href="#portlet-config" data-toggle="modal" class="config">
+								    </a>
+								    <a href="javascript:;" class="reload">
+								    </a>
+								    <a href="javascript:;" class="remove">
+								    </a>
+							      </div>
+						        </div>
+						        <div class="portlet-body">
+                                  <div class="panel panel-success">
+								    <!-- Default panel contents -->
+								    <div class="panel-heading">
+									  <h3 class="panel-title">资源使用概览(持续三分钟监测数据分析)</h3>
+								    </div>
+								    <div class="panel-body">
+                                      <div class="alert alert-danger">
+								        <strong>Danger!</strong> 监测到目前有<span class="label label-danger">1</span>台Mysql服务器压力不均衡!
+							          </div>
+								    </div>
+								    <!-- Table -->
+								    <table class="table">
+									  <thead>
+									    <tr>
+										  <th>
+										    #
+										  </th>
+                                          <th>
+                                            监测开始时间
+                                          </th>
+										  <th>
+										    主机名
+										  </th>
+										  <th>IP地址</th>
+										  <th>
+										    CPU占用(平均)
+										  </th>
+                                          <th>
+										    内存占用
+										  </th>
+                                          <th>操作</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr>
+										  <td>
+										    1
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>mysql01</td>
+										  <td>192.168.1.100</td>
+										  <td>
+										    15%
+										  </td>
+										  <td>
+                                            2400M/8000M
+                                          </td>
+                                          <td>
+										    <a href="#">详情</a>
+										  </td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    2
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>mysql02</td>
+										  <td>192.168.1.102</td>
+										  <td>
+										    15%
+										  </td>
+										  <td>
+                                            3600M/8000M
+                                          </td>
+                                          <td>
+										    <a href="#">详情</a>
+										  </td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    3
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>mysql03</td>
+                                          
+										  <td>192.168.1.103</td>
+										  <td>
+										    <span class="label-warning">92%</span>
+										  </td>
+										  <td>
+                                            <span class="label-warning">6600M/8000M</span>
+                                          </td>
+                                          <td>
+										    <a href="#">详情</a>
+										  </td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    4
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>mysql04</td>
+										  <td>192.168.1.104</td>
+										  <td>
+										    18%
+										  </td>
+										  <td>
+                                            2450M/8000M
+                                          </td>
+                                          <td>
+										    <a href="#">详情</a>
+										  </td>
+									    </tr>
+									  </tbody>
+								    </table>
+								  </div>
+                                  <div class="panel panel-success">
+								    <!-- Default panel contents -->
+								    <div class="panel-heading">
+									  <h3 class="panel-title">数据库连接数</h3>
+								    </div>
+								    <!--<div class="panel-body">
+                                        <div class="alert alert-warning">
+								          <strong>Warning!</strong> 
+                                          监测到目前有<span class="label label-danger">2</span>台linux服务器磁盘剩余空间低于5%!
+							            </div>
+                                        <div class="alert alert-danger">
+								          <strong>Danger!</strong> 
+                                          监测到目前有<span class="label label-danger">1</span>台服务器CPU使用率超过95%! 监测到僵尸进程!<a href="#">查看</a>
+							            </div>
+								    </div>-->
+								    <!-- Table -->
+								    <table class="table">
+									  <thead>
+									    <tr>
+										  <th>
+										    #
+										  </th>
+                                          <th>监测时间</th>
+										  <th>
+										    数据库主机名
+										  </th>
+										  <th>数据库IP地址</th>
+                                          <th>请求应用主机名</th>
+                                          <th>请求应用IP</th>
+										  <th>
+										    数据库连接数
+										  </th>
+									    </tr>
+									  </thead>
+                                      <tbody>
+									    <tr>
+										  <td>
+										    1
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>mysql01</td>
+										  <td>192.168.1.100</td>
+										  <td>wcm03</td>
+										  <td>192.168.1.103</td>
+                                          <td>
+										    145
+										  </td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    2
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>mysql03</td>
+										  <td>192.168.1.102</td>
+										  <td>wcm04</td>
+										  <td>192.168.1.108</td>
+                                          <td>
+										    178
+										  </td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    3
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>mysql01</td>
+										  <td>192.168.1.103</td>
+										  <td>hr02</td>
+										  <td>192.168.1.109</td>
+                                          <td>
+										    209
+										  </td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    4
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>mysql03</td>
+										  <td>192.168.1.104</td>
+										  <td>hr04</td>
+										  <td>192.168.1.115</td>
+                                          <td>
+										    340
+										  </td>
+									    </tr>
+									  </tbody>
+								    </table>
+								  </div>
+						        </div>
+					          </div>
+					          <!-- END SAMPLE TABLE PORTLET-->
+				            </div>
 						  </div>
 						</div>
 						<div class="tab-pane" id="tab_2">
@@ -360,18 +578,124 @@
 						</div>
                         <div class="tab-pane" id="tab_5">
 						  <div class="table-container">
-							<!--<div class="table-actions-wrapper">
-							  <span>
-							  </span>
-							  <select class="table-group-action-input form-control input-inline input-small input-sm">
-								<option value="">Select...</option>
-								<option value="pending">Pending</option>
-								<option value="paid">Paid</option>
-								<option value="canceled">Canceled</option>
-							  </select>
-							  <button class="btn btn-sm yellow table-group-action-submit"><i class="fa fa-check"></i> Submit</button>
-							</div>-->
-
+                            <div class="col-md-12">
+					          <!-- BEGIN SAMPLE TABLE PORTLET-->
+					          <div class="portlet box purple">
+						        <div class="portlet-title">
+							      <div class="caption">
+								    <i class="fa fa-comments"></i>信息收集
+							      </div>
+							      <div class="tools">
+								    <a href="javascript:;" class="collapse">
+								    </a>
+								    <a href="#portlet-config" data-toggle="modal" class="config">
+								    </a>
+								    <a href="javascript:;" class="reload">
+								    </a>
+								    <a href="javascript:;" class="remove">
+								    </a>
+							      </div>
+						        </div>
+						        <div class="portlet-body">
+                                  <div class="panel panel-success">
+								    <!-- Default panel contents -->
+								    <div class="panel-heading">
+									  <h3 class="panel-title">慢查询</h3>
+								    </div>
+								    <!--<div class="panel-body">
+                                        <div class="alert alert-warning">
+								          <strong>Warning!</strong> 
+                                          监测到目前有<span class="label label-danger">2</span>台linux服务器磁盘剩余空间低于5%!
+							            </div>
+                                        <div class="alert alert-danger">
+								          <strong>Danger!</strong> 
+                                          监测到目前有<span class="label label-danger">1</span>台服务器CPU使用率超过95%! 监测到僵尸进程!<a href="#">查看</a>
+							            </div>
+								    </div>-->
+								    <!-- Table -->
+								    <table class="table">
+									  <thead>
+									    <tr>
+										  <th>
+										    #
+										  </th>
+                                          <th>监测时间</th>
+										  <th>
+										    数据库主机名
+										  </th>
+										  <th>数据库IP地址</th>
+                                          <th>请求应用主机名</th>
+                                          <th>请求应用IP</th>
+										  <th>
+										    慢查询数(近三天)
+										  </th>
+                                          <th>操作</th>
+									    </tr>
+									  </thead>
+                                      <tbody>
+									    <tr>
+										  <td>
+										    1
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>mysql01</td>
+										  <td>192.168.1.100</td>
+										  <td>wcm03</td>
+										  <td>192.168.1.103</td>
+                                          <td>
+										    145
+										  </td>
+                                          <td><a href="#">导出</a></td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    2
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>mysql03</td>
+										  <td>192.168.1.102</td>
+										  <td>wcm04</td>
+										  <td>192.168.1.108</td>
+                                          <td>
+										    178
+										  </td>
+                                          <td><a href="#">导出</a></td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    3
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>mysql01</td>
+										  <td>192.168.1.103</td>
+										  <td>hr02</td>
+										  <td>192.168.1.109</td>
+                                          <td>
+										    209
+										  </td>
+                                          <td><a href="#">导出</a></td>
+									    </tr>
+                                        <tr>
+										  <td>
+										    4
+										  </td>
+                                          <td>2015.03.23 14:23:23</td>
+										  <td>mysql03</td>
+										  <td>192.168.1.104</td>
+										  <td>hr04</td>
+										  <td>192.168.1.115</td>
+                                          <td>
+										    340
+										  </td>
+                                          <td><a href="#">导出</a></td>
+									    </tr>
+									  </tbody>
+								    </table>
+								  </div>
+						        </div>
+					          </div>
+					          <!-- END SAMPLE TABLE PORTLET-->
+				            </div>
 						  </div>
 						</div>
                         <div class="tab-pane" id="tab_6">
