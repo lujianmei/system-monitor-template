@@ -168,6 +168,23 @@
                     </li>
                   </ul>
                 </li>
+                <li>
+                  <a href="#">
+                    <i class="icon-settings"></i>
+                    <span class="title">系统日志</span>
+                    <span class="arrow "></span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="./access_log.shtml">
+                        访问日志</a>
+                    </li>
+                    <li>
+                      <a href="./operation_log.shtml">
+                        配置修改日志</a>
+                    </li>
+                  </ul>
+                </li>
             </ul>
             <!-- END SIDEBAR MENU -->
 </div>
