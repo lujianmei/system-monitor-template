@@ -32,7 +32,7 @@
                     </form>
                     <!-- END RESPONSIVE QUICK SEARCH FORM -->
                 </li>
-                <li class="start active open">
+                <li >
                     <a href="javascript:;">
                     <i class="icon-home"></i>
                     <span class="title">预警监测中心</span>
@@ -40,27 +40,27 @@
                     <span class="arrow open"></span>
                     </a>
                     <ul class="sub-menu">
-                        <li class="active">
+                        <li >
                             <a href="index.shtml">
                             <i class="icon-bar-chart"></i>
                             监控仪表盘</a>
                         </li>
-                        <li class="active">
+                        <li >
                           <a href="server_list.shtml">
                             <i class="icon-bulb"></i>
                             服务器组</a>
                         </li>
-                        <li class="active">
+                        <li >
                           <a href="service_list.shtml">
                             <i class="icon-bulb"></i>
                             应用服务监测</a>
                         </li>
-                        <li class="active">
+                        <li >
                           <a href="hosts_manage_warning.shtml">
                             <i class="icon-graph"></i>
                             服务器报警</a>
                         </li>
-                        <li class="active">
+                        <li >
                           <a href="hosts_manage_danger.shtml">
                             <i class="icon-bulb"></i>
                             严重问题</a>
@@ -68,24 +68,24 @@
 
                     </ul>
                 </li>
-                <li>
+                <li >
                   <a href="javascript:;">
                     <i class="icon-basket"></i>
                     <span class="title">智能诊断中心</span>
                     <span class="arrow "></span>
                   </a>
                   <ul class="sub-menu">
-                    <li>
+                    <li >
                       <a href="./base_env.shtml">
                         <i class="icon-home"></i>
                         基础资源</a>
                     </li>
-                    <li>
+                    <li >
                       <a href="./webserver_list.shtml">
                         <i class="icon-basket"></i>
                         Web服务器</a>
                     </li>
-                    <li>
+                    <li >
                       <a href="./application_list.shtml">
                         <i class="icon-basket"></i>
                         应用及中间件</a>
@@ -102,26 +102,26 @@
                     </li>-->
                   </ul>
                 </li>
-                <li>
+                <li class="start active open">
                   <a href="javascript:;">
                     <i class="icon-rocket"></i>
                     <span class="title">自动化运维中心</span>
                     <span class="arrow "></span>
                   </a>
                   <ul class="sub-menu">
-                    <li>
+                    <li class="active">
                       <a href="hosts_manage.shtml">
                         主机管理</a>
                     </li>
-                    <li>
+                    <li >
                       <a href="./system_upgrade.shtml">
                         操作系统升级</a>
                     </li>
-                    <li>
+                    <li >
                       <a href="./scripts_list.shtml">
                         脚本管理</a>
                     </li>
-                    <li>
+                    <li >
                       <a href="./package_manage.shtml">
                         软件仓库管理</a>
                     </li>
@@ -155,35 +155,35 @@
                 <li class="heading">
                   <h3 class="uppercase">系统管理</h3>
                 </li>
-                <li>
+                <li >
                   <a href="#">
                     <i class="icon-settings"></i>
                     <span class="title">用户管理</span>
                     <span class="arrow "></span>
                   </a>
                   <ul class="sub-menu">
-                    <li>
+                    <li >
                       <a href="./user_list.shtml">
                         用户管理</a>
                     </li>
-                    <li>
+                    <li >
                       <a href="./permission_manage.shtml">
                         权限管理</a>
                     </li>
                   </ul>
                 </li>
-                <li>
+                <li >
                   <a href="#">
                     <i class="icon-settings"></i>
                     <span class="title">系统日志</span>
                     <span class="arrow "></span>
                   </a>
                   <ul class="sub-menu">
-                    <li>
+                    <li >
                       <a href="./access_log.shtml">
                         访问日志</a>
                     </li>
-                    <li>
+                    <li >
                       <a href="./operation_log.shtml">
                         配置修改日志</a>
                     </li>
